@@ -10,7 +10,8 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "analyze": "vite-bundle-visualizer"
   },
   "dependencies": {
     "gsap": "^3.12.5",
@@ -33,6 +34,7 @@
     "sass": "^1.77.8",
     "typescript": "~5.4.0",
     "vite": "^5.3.1",
+    "vite-bundle-visualizer": "^1.2.1",
     "vue-tsc": "^2.0.21"
   }
 }
