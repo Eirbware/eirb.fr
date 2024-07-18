@@ -11,7 +11,11 @@
   <main>
     <HomeView />
 
-    <img src="/img/backgrounds/triangle-down.svg" class="separator" style="position: absolute; bottom: -1px" />
+    <img
+      src="/img/backgrounds/triangle-down.svg"
+      class="separator"
+      style="position: absolute; bottom: -1px"
+    />
   </main>
 
   <footer>

@@ -35,7 +35,7 @@ const event = ref(props.date);
 const finish = ref(false);
 
 const calculatedDate = computed(() => {
-  return Math.trunc(event.value.getTime() / 1000)
+  return Math.trunc(event.value.getTime() / 1000);
 });
 
 const secondCount = computed(() => {
@@ -43,35 +43,34 @@ const secondCount = computed(() => {
 });
 
 const seconds = computed(() => {
-  if (secondCount.value < 0) return 0
-  return secondCount.value % 60
-})
+  if (secondCount.value < 0) return 0;
+  return secondCount.value % 60;
+});
 
 const minutes = computed(() => {
-  if (secondCount.value < 0) return 0
-  return Math.trunc(secondCount.value / 60) % 60
-})
+  if (secondCount.value < 0) return 0;
+  return Math.trunc(secondCount.value / 60) % 60;
+});
 
 const hours = computed(() => {
-  if (secondCount.value < 0) return 0
-  return Math.trunc(secondCount.value / 60 / 60) % 24
-})
+  if (secondCount.value < 0) return 0;
+  return Math.trunc(secondCount.value / 60 / 60) % 24;
+});
 
 const days = computed(() => {
-  if (secondCount.value < 0) return 0
-  return Math.trunc(secondCount.value / 60 / 60 / 24)
-})
+  if (secondCount.value < 0) return 0;
+  return Math.trunc(secondCount.value / 60 / 60 / 24);
+});
 
 onMounted(() => {
   window.setInterval(() => {
-    now.value = Math.trunc(new Date().getTime() / 1000)
+    now.value = Math.trunc(new Date().getTime() / 1000);
     if (!finish.value && calculatedDate.value - now.value <= 0) {
       finish.value = true;
-      emit("finish");
+      emit('finish');
     }
-  }, 1000)
-})
-
+  }, 1000);
+});
 
 function twoDigits(value: number): string {
   if (value.toString().length <= 1) {
