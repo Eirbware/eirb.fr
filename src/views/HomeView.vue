@@ -77,7 +77,7 @@ function finish() {
   const section = document.getElementById('countdown');
   if (section) {
     party.confetti(section, {
-      count: party.variation.range(40, 80)
+      count: party.variation.range(40, 80),
     });
     const newEnd = new Date(end);
     newEnd.setSeconds(newEnd.getSeconds() + 3);
@@ -94,7 +94,7 @@ function tada() {
     const section = document.getElementById('search');
     if (section) {
       party.confetti(section, {
-        count: party.variation.range(40, 80)
+        count: party.variation.range(40, 80),
       });
     }
   }
@@ -111,7 +111,7 @@ const filteredLinkGroups = computed<LinkGroup[]>(() => {
             l.description.toLowerCase().includes(search.value.toLocaleLowerCase()) ||
             l.url.includes(search.value.toLocaleLowerCase())
           );
-        })
+        }),
       };
     })
     .filter((linkGroup) => {
@@ -150,7 +150,7 @@ function onEnterFn(el: Element, done: () => void) {
     opacity: 1,
     height: 'auto',
     delay: parseFloat((el as HTMLElement).dataset.index || '0') * 0.15,
-    onComplete: done
+    onComplete: done,
   });
 }
 
@@ -159,7 +159,7 @@ function onLeaveFn(el: Element, done: () => void) {
     opacity: 0,
     height: 0,
     delay: parseFloat((el as HTMLElement).dataset.index || '0') * 0.15,
-    onComplete: done
+    onComplete: done,
   });
 }
 </script>
