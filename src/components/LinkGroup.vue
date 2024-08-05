@@ -16,9 +16,9 @@
 </template>
 
 <script setup lang="ts">
-import type { LinkGroup } from '@/assets/links/index.ts';
+import type { LinkGroup } from '@/assets/links/index';
 import LinkCard from '@/components/LinkCard.vue';
-import { onBeforeEnterFn, onEnterFn, onLeaveFn } from '@/assets/animations.ts';
+import { onBeforeEnterFn, onEnterFn, onLeaveFn } from '@/assets/animations';
 
 const props = defineProps<{
   linkGroup: LinkGroup;

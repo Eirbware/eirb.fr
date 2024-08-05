@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Link } from '@/assets/links/index.ts';
+import type { Link } from '@/assets/links/index';
 
 const props = defineProps<{
   link: Link;

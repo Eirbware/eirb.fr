@@ -19,7 +19,7 @@ import HomeView from '@/views/HomeView.vue';
 import Header from '@/components/HeaderHome.vue';
 import Footer from '@/components/FooterHome.vue';
 
-import { initDarkTheme } from '@/assets/darkTheme.ts';
+import { initDarkTheme } from '@/assets/darkTheme';
 
 initDarkTheme();
 </script>
