@@ -57,8 +57,8 @@ body {
 #app {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: min-content auto min-content;
-  height: 100%;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh;
   // overflow-x: hidden;
   box-sizing: border-box;
 }
