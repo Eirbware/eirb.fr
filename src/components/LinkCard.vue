@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img :src="'img/' + link.icon" />
+    <img :src="'img/' + link.icon" loading="lazy" />
 
     <h4>{{ link.name }}</h4>
     <p>{{ link.description }}</p>

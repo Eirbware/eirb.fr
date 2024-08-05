@@ -11,63 +11,29 @@
     />
   </main>
 
-  <footer>
-    <div class="container">
-      <div>
-        <p>
-          Copyright <span style="cursor: pointer" @click="toggleDarkMode()">©</span> 2024
-          Association Eirbware.
-        </p>
-        <p>Tous droits réservés.</p>
-      </div>
-      <div></div>
-      <img src="/img/logo_em.svg" alt="Logo de l'ENSEIRB-MATMECA" />
-    </div>
-  </footer>
+  <Footer />
 </template>
 
 <script setup lang="ts">
-import HomeView from './views/HomeView.vue';
-
-// Check for dark mode preference at the OS level
-const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-// Get the user's theme preference from local storage, if it's available
-const currentTheme = localStorage.getItem('theme');
-
-// If the user's preference in localStorage is dark...
-if (currentTheme == 'dark') {
-  // ...let's toggle the .dark-theme class on the body
-  document.body.classList.toggle('dark-theme');
-  // Otherwise, if the user's preference in localStorage is light...
-} else if (currentTheme == 'light') {
-  // ...let's toggle the .light-theme class on the body
-  document.body.classList.toggle('light-theme');
-}
+import HomeView from '@/views/HomeView.vue';
 import Header from '@/components/HeaderHome.vue';
+import Footer from '@/components/FooterHome.vue';
 
-function toggleDarkMode() {
-  // If the user's OS setting is dark and matches our .dark-theme class...
-  let theme;
+import { initDarkTheme } from '@/assets/darkTheme.ts';
 
-  if (prefersDarkScheme.matches) {
-    // ...then toggle the light mode class
-    document.body.classList.toggle('light-theme');
-    // ...but use .dark-theme if the .light-theme class is already on the body,
-    theme = document.body.classList.contains('light-theme') ? 'light' : 'dark';
-  } else {
-    // Otherwise, let's do the same thing, but for .dark-theme
-    document.body.classList.toggle('dark-theme');
-    theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
-  }
-
-  // Finally, let's save the current preference to localStorage to keep using it
-  localStorage.setItem('theme', theme);
-}
+initDarkTheme();
 </script>
 
 <style lang="scss">
 @import 'assets/style.scss';
+
+main {
+  background:
+    url('/img/backgrounds/background-left.svg') no-repeat left top,
+    url('/img/backgrounds/background-right.svg') no-repeat right 705px var(--bkg-color);
+  padding-bottom: 5vw;
+  position: relative;
+}
 
 .fade-height-enter-active,
 .fade-height-leave-active {
@@ -137,5 +103,12 @@ nav {
   /* Hauteur du triangle */
   border-left: 100vw solid var(--primary-color);
   /* Largeur du triangle et couleur */
+}
+
+img.separator {
+  display: block;
+  width: 100%;
+  user-select: none;
+  pointer-events: none;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="home">
     <!--
       Event headers
     -->
@@ -27,31 +27,29 @@
         No elements in filtered links
       -->
     <div class="container">
-      <div id="overall" class="home">
-        <Transition name="fade-height">
-          <div v-show="filteredLinkGroups.length == 0">
-            <div class="no-content">
-              <img src="../assets/search.svg" />
-              <h4>Aucun résultat n'a pu être trouvé</h4>
-            </div>
+      <Transition name="fade-height">
+        <div v-show="filteredLinkGroups.length == 0">
+          <div class="no-content">
+            <img src="../assets/search.svg" />
+            <h4>Aucun résultat n'a pu être trouvé</h4>
           </div>
-        </Transition>
+        </div>
+      </Transition>
 
-        <!--
-          Groups
-        -->
-        <TransitionGroup
-          tag="div"
-          :css="false"
-          @before-enter="onBeforeEnterFn"
-          @enter="onEnterFn"
-          @leave="onLeaveFn"
-        >
-          <section v-for="linkGroup in filteredLinkGroups" :id="linkGroup.id" :key="linkGroup.id">
-            <LinkGroupComponent :linkGroup="linkGroup"></LinkGroupComponent>
-          </section>
-        </TransitionGroup>
-      </div>
+      <!--
+        Groups
+      -->
+      <TransitionGroup
+        tag="div"
+        :css="false"
+        @before-enter="onBeforeEnterFn"
+        @enter="onEnterFn"
+        @leave="onLeaveFn"
+      >
+        <section v-for="linkGroup in filteredLinkGroups" :id="linkGroup.id" :key="linkGroup.id">
+          <LinkGroupComponent :linkGroup="linkGroup"></LinkGroupComponent>
+        </section>
+      </TransitionGroup>
     </div>
   </div>
 </template>
@@ -74,12 +72,15 @@ const end = new Date('2024-04-14T22:00:00Z');
 
 function finish() {
   const section = document.getElementById('countdown');
-  if (section) {
+
+  if (section !== null) {
     party.confetti(section, {
       count: party.variation.range(40, 80),
     });
+
     const newEnd = new Date(end);
     newEnd.setSeconds(newEnd.getSeconds() + 3);
+
     if (newEnd > new Date()) {
       setTimeout(() => {
         window.location.reload();
@@ -90,7 +91,8 @@ function finish() {
 
 function tada() {
   if (search.value === 'tada') {
-    const section = document.getElementById('search');
+    const section = document.querySelector(".search");
+    console.log(section);
     if (section) {
       party.confetti(section, {
         count: party.variation.range(40, 80),
@@ -118,6 +120,7 @@ const filteredLinkGroups = computed<LinkGroup[]>(() => {
     });
 });
 
+// Focus the search input on ":" or "/" keypress
 function onKeydownFn(event: KeyboardEvent) {
   if (
     searchInput.value &&
@@ -141,28 +144,34 @@ onUnmounted(() => {
 </script>
 
 <style scoped lang="scss">
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .search {
   width: 170px;
   height: 40px;
-  border-radius: 8px;
-  border: 3px solid var(--secondary-color);
-  background: url('/img/icons/search.svg') no-repeat 4px center / contain #ffffff;
-  padding: 0 0 0 40px;
-  font-size: 18px;
-  transition: border-color 0.2s ease-in-out;
-  font-family: 'Raleway', sans-serif;
-  display: block;
-  margin: auto;
   margin-top: calc(60px - 2.5vw);
-}
+  padding-left: 40px;
 
-.search:focus {
-  outline: none;
   border: 3px solid var(--secondary-color);
+  border-radius: 8px;
+  outline: none;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  background: url('/img/icons/search.svg') no-repeat 4px center / contain #ffffff;
 }
 
-#overall {
-  padding: 10px;
-  grid-gap: 0 20px;
+.no-content {
+  text-align: center;
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
 }
 </style>
