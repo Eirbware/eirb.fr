@@ -9,9 +9,7 @@
     @leave="onLeaveFn"
     class="cards"
   >
-    <a v-for="link in linkGroup.links" :href="link.url" :key="link.url" rel="nofollow">
-      <LinkCard :link="link" />
-    </a>
+    <LinkCard v-for="link in linkGroup.links" :key="link.url" :link="link"> </LinkCard>
   </TransitionGroup>
 </template>
 
@@ -25,9 +23,11 @@ const props = defineProps<{
 }>();
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .cards {
   display: grid;
+  gap: 10px;
+  padding: 0 10px;
   grid-template-columns: repeat(3, minmax(380px, 1fr));
 
   @media screen and (max-width: 1180px) {
@@ -36,10 +36,6 @@ const props = defineProps<{
 
   @media screen and (max-width: 800px) {
     grid-template-columns: 1fr;
-  }
-
-  a {
-    text-decoration: none;
   }
 }
 </style>

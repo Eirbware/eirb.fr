@@ -1,10 +1,12 @@
 <template>
-  <div class="card">
-    <img :src="'img/' + link.icon" loading="lazy" />
+  <a :href="link.url" :key="link.url" rel="nofollow">
+    <div class="card">
+      <img :src="'img/' + link.icon" loading="lazy" />
 
-    <h4>{{ link.name }}</h4>
-    <p>{{ link.description }}</p>
-  </div>
+      <h4>{{ link.name }}</h4>
+      <p>{{ link.description }}</p>
+    </div>
+  </a>
 </template>
 
 <script setup lang="ts">
@@ -16,8 +18,12 @@ const props = defineProps<{
 </script>
 
 <style scoped lang="scss">
+a {
+  text-decoration: none;
+  border-radius: 10px;
+}
+
 .card {
-  margin: 10px;
   padding: 10px;
   border-radius: 10px;
   box-sizing: border-box;
