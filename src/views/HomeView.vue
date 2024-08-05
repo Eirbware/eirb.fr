@@ -20,7 +20,6 @@
       autocomplete="false"
       autofocus
       v-model="search"
-      v-on:keyup.enter="tada()"
     />
 
     <!--
@@ -59,8 +58,6 @@ import { computed, onMounted, onUnmounted, ref } from 'vue';
 import CountDown from '@/components/CountDown.vue';
 import LinkGroupComponent from '@/components/LinkGroup.vue';
 
-import party from 'party-js';
-
 import { onBeforeEnterFn, onEnterFn, onLeaveFn } from '@/assets/animations.ts';
 import linkGroups, { type LinkGroup } from '@/assets/links';
 
@@ -74,10 +71,6 @@ function finish() {
   const section = document.getElementById('countdown');
 
   if (section !== null) {
-    party.confetti(section, {
-      count: party.variation.range(40, 80),
-    });
-
     const newEnd = new Date(end);
     newEnd.setSeconds(newEnd.getSeconds() + 3);
 
@@ -85,18 +78,6 @@ function finish() {
       setTimeout(() => {
         window.location.reload();
       }, 3000);
-    }
-  }
-}
-
-function tada() {
-  if (search.value === 'tada') {
-    const section = document.querySelector('.search');
-    console.log(section);
-    if (section) {
-      party.confetti(section, {
-        count: party.variation.range(40, 80),
-      });
     }
   }
 }
