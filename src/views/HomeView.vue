@@ -1,10 +1,16 @@
 <template>
   <div>
+    <!--
+      Event headers
+    -->
     <section id="countdown" v-if="now < end">
       <h3>Semaine des Arts</h3>
       <CountDown :date="end" @onFinish="finish" />
     </section>
 
+    <!--
+        Input
+      -->
     <input
       type="search"
       class="search"
@@ -17,6 +23,9 @@
       v-on:keyup.enter="tada()"
     />
 
+    <!--
+        No elements in filtered links
+      -->
     <div class="container">
       <div id="overall" class="home">
         <Transition name="fade-height">
@@ -28,6 +37,9 @@
           </div>
         </Transition>
 
+        <!--
+          Groups
+        -->
         <TransitionGroup
           tag="div"
           :css="false"
@@ -36,22 +48,7 @@
           @leave="onLeaveFn"
         >
           <section v-for="linkGroup in filteredLinkGroups" :id="linkGroup.id" :key="linkGroup.id">
-            <h3>{{ linkGroup.name }}</h3>
-
-            <TransitionGroup
-              tag="div"
-              :css="false"
-              @before-enter="onBeforeEnterFn"
-              @enter="onEnterFn"
-              @leave="onLeaveFn"
-              class="cards"
-            >
-              <a v-for="link in linkGroup.links" :href="link.url" :key="link.url" rel="nofollow">
-                <img :src="'img/' + link.icon" />
-                <h4>{{ link.name }}</h4>
-                <p>{{ link.description }}</p>
-              </a>
-            </TransitionGroup>
+            <LinkGroupComponent :linkGroup="linkGroup"></LinkGroupComponent>
           </section>
         </TransitionGroup>
       </div>
@@ -62,10 +59,12 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from 'vue';
 import CountDown from '@/components/CountDown.vue';
-import gsap from 'gsap';
+import LinkGroupComponent from '@/components/LinkGroup.vue';
+
 import party from 'party-js';
 
-import linkGroups, { type LinkGroup } from '../assets/links';
+import { onBeforeEnterFn, onEnterFn, onLeaveFn } from '@/assets/animations.ts';
+import linkGroups, { type LinkGroup } from '@/assets/links';
 
 const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
@@ -139,29 +138,6 @@ onMounted(() => {
 onUnmounted(() => {
   document.body.removeEventListener('keydown', onKeydownFn);
 });
-
-function onBeforeEnterFn(el: Element) {
-  (el as HTMLElement).style.opacity = '0';
-  (el as HTMLElement).style.height = '0';
-}
-
-function onEnterFn(el: Element, done: () => void) {
-  gsap.to(el, {
-    opacity: 1,
-    height: 'auto',
-    delay: parseFloat((el as HTMLElement).dataset.index || '0') * 0.15,
-    onComplete: done,
-  });
-}
-
-function onLeaveFn(el: Element, done: () => void) {
-  gsap.to(el, {
-    opacity: 0,
-    height: 0,
-    delay: parseFloat((el as HTMLElement).dataset.index || '0') * 0.15,
-    onComplete: done,
-  });
-}
 </script>
 
 <style scoped lang="scss">
@@ -183,67 +159,6 @@ function onLeaveFn(el: Element, done: () => void) {
 .search:focus {
   outline: none;
   border: 3px solid var(--secondary-color);
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(380px, 1fr));
-
-  @media screen and (max-width: 1180px) {
-    grid-template-columns: repeat(2, minmax(380px, 1fr));
-  }
-
-  @media screen and (max-width: 800px) {
-    grid-template-columns: 1fr;
-  }
-
-  a {
-    background-color: var(--card-bkg-color);
-    display: grid;
-    grid-gap: 0 10px;
-    grid-template-columns: 64px auto;
-    grid-template-rows: auto auto;
-    text-decoration: none;
-    color: var(--text-color);
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transition:
-      transform 0.2s ease-in-out,
-      box-shadow 0.2s ease-in-out;
-    box-sizing: border-box;
-
-    &:hover {
-      box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.4);
-      transform: translate(4px, -4px);
-    }
-
-    img {
-      grid-column: 1;
-      grid-row: 1/3;
-
-      width: 64px;
-      height: 64px;
-    }
-
-    h4 {
-      grid-column: 2;
-      grid-row: 1;
-
-      margin: 0;
-      font-size: 23px;
-      color: #3498db;
-      text-decoration: underline;
-    }
-
-    p {
-      grid-column: 2;
-      grid-row: 2;
-
-      margin: 0;
-    }
-  }
 }
 
 #overall {
