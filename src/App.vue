@@ -2,11 +2,11 @@
   <header>
     <h1>eirb.fr</h1>
     <h2>Services, clubs & associations de l'ENSEIRB-MATMECA</h2>
-  </header>
 
-  <div class="triangle-wrapper">
-    <div class="triangle-right"></div>
-  </div>
+    <div class="triangle-wrapper">
+      <div class="triangle-right"></div>
+    </div>
+  </header>
 
   <main>
     <HomeView />

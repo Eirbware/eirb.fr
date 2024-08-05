@@ -57,37 +57,32 @@ body {
 #app {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: min-content auto min-content;
-  height: 100%;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh;
   // overflow-x: hidden;
   box-sizing: border-box;
 }
 
 header {
-  background-color: var(--primary-color);
   padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  font-weight: bold;
-  color: #ffffff;
-  position: relative;
-  width: 100%;
-  box-sizing: border-box;
+  background-color: var(--primary-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 
   h1 {
-    margin: 0 auto;
     font-size: 42px;
     background-color: #fff;
     color: var(--primary-color);
     width: fit-content;
     padding: 8px 16px;
-    position: relative;
-    z-index: 0;
   }
 
-  h2 {
-    margin: 20px auto 0 auto;
-  }
+  h2 { color: #fff; }
+
+  h1, h2 { margin: 0; }
 }
 
 main {
