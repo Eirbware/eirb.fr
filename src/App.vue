@@ -1,12 +1,5 @@
 <template>
-  <header>
-    <h1>eirb.fr</h1>
-    <h2>Services, clubs & associations de l'ENSEIRB-MATMECA</h2>
-
-    <div class="triangle-wrapper">
-      <div class="triangle-right"></div>
-    </div>
-  </header>
+  <Header />
 
   <main>
     <HomeView />
@@ -51,6 +44,7 @@ if (currentTheme == 'dark') {
   // ...let's toggle the .light-theme class on the body
   document.body.classList.toggle('light-theme');
 }
+import Header from '@/components/HeaderHome.vue';
 
 function toggleDarkMode() {
   // If the user's OS setting is dark and matches our .dark-theme class...
