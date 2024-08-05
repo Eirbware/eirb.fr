@@ -29,9 +29,14 @@ header {
     padding: 8px 16px;
   }
 
-  h2 { color: #fff; }
+  h2 {
+    color: #fff;
+  }
 
-  h1, h2 { margin: 0; }
+  h1,
+  h2 {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 794px) {

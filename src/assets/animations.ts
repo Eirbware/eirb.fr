@@ -23,8 +23,4 @@ function onBeforeEnterFn(el: Element) {
   (el as HTMLElement).style.height = '0';
 }
 
-export {
-  onEnterFn,
-  onLeaveFn,
-  onBeforeEnterFn,
-};
+export { onEnterFn, onLeaveFn, onBeforeEnterFn };

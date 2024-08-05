@@ -29,7 +29,6 @@ footer {
     padding: 10px 20px 20px 20px;
     margin: 0 auto;
 
-
     color: #d5dadd;
   }
 

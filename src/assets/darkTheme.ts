@@ -1,4 +1,3 @@
-
 function initDarkTheme() {
   // Get the user's theme preference from local storage, if it's available
   const currentTheme = localStorage.getItem('theme');
@@ -35,7 +34,4 @@ function toggleDarkTheme() {
   localStorage.setItem('theme', theme);
 }
 
-export {
-  initDarkTheme,
-  toggleDarkTheme,
-};
+export { initDarkTheme, toggleDarkTheme };

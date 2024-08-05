@@ -1,10 +1,9 @@
-import type { LinkGroup } from "./links"
+import type { LinkGroup } from './links';
 
 const channels: LinkGroup = {
   id: 'channels',
   name: 'Canaux',
-  links: [
-  ],
-}
+  links: [],
+};
 
 export default channels;

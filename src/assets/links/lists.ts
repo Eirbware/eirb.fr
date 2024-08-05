@@ -1,4 +1,4 @@
-import type { LinkGroup } from "./links";
+import type { LinkGroup } from './links';
 
 const lists: LinkGroup = {
   id: 'lists',

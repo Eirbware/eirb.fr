@@ -91,7 +91,7 @@ function finish() {
 
 function tada() {
   if (search.value === 'tada') {
-    const section = document.querySelector(".search");
+    const section = document.querySelector('.search');
     console.log(section);
     if (section) {
       party.confetti(section, {
