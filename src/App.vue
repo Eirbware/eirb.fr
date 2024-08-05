@@ -18,19 +18,7 @@
     />
   </main>
 
-  <footer>
-    <div class="container">
-      <div>
-        <p>
-          Copyright <span style="cursor: pointer" @click="toggleDarkMode()">©</span> 2024
-          Association Eirbware.
-        </p>
-        <p>Tous droits réservés.</p>
-      </div>
-      <div></div>
-      <img src="/img/logo_em.svg" alt="Logo de l'ENSEIRB-MATMECA" />
-    </div>
-  </footer>
+  <Footer />
 </template>
 
 <script setup lang="ts">
@@ -51,6 +39,7 @@ if (currentTheme == 'dark') {
   // ...let's toggle the .light-theme class on the body
   document.body.classList.toggle('light-theme');
 }
+import Footer from '@/components/FooterHome.vue';
 
 function toggleDarkMode() {
   // If the user's OS setting is dark and matches our .dark-theme class...
