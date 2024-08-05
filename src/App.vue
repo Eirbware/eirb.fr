@@ -22,7 +22,8 @@
 </template>
 
 <script setup lang="ts">
-import HomeView from './views/HomeView.vue';
+import HomeView from '@/views/HomeView.vue';
+import Header from '@/components/HeaderHome.vue';
 import Footer from '@/components/FooterHome.vue';
 
 import { initDarkTheme } from '@/assets/darkTheme.ts';
@@ -32,6 +33,14 @@ initDarkTheme();
 
 <style lang="scss">
 @import 'assets/style.scss';
+
+main {
+  background:
+    url('/img/backgrounds/background-left.svg') no-repeat left top,
+    url('/img/backgrounds/background-right.svg') no-repeat right 705px var(--bkg-color);
+  padding-bottom: 5vw;
+  position: relative;
+}
 
 .fade-height-enter-active,
 .fade-height-leave-active {
@@ -101,5 +110,12 @@ nav {
   /* Hauteur du triangle */
   border-left: 100vw solid var(--primary-color);
   /* Largeur du triangle et couleur */
+}
+
+img.separator {
+  display: block;
+  width: 100%;
+  user-select: none;
+  pointer-events: none;
 }
 </style>

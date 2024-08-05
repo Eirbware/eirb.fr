@@ -1,4 +1,3 @@
-
 import type { Link, LinkGroup } from "./links";
 import services from "./services";
 import shortcuts from "./shortcut";
