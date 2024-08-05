@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import { toggleDarkTheme } from '@/assets/darkTheme.ts';
+import { toggleDarkTheme } from '@/assets/darkTheme';
 </script>
 
 <style scoped lang="scss">

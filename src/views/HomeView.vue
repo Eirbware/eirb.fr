@@ -58,7 +58,7 @@ import { computed, onMounted, onUnmounted, ref } from 'vue';
 import CountDown from '@/components/CountDown.vue';
 import LinkGroupComponent from '@/components/LinkGroup.vue';
 
-import { onBeforeEnterFn, onEnterFn, onLeaveFn } from '@/assets/animations.ts';
+import { onBeforeEnterFn, onEnterFn, onLeaveFn } from '@/assets/animations';
 import linkGroups, { type LinkGroup } from '@/assets/links';
 
 const searchInput = ref<HTMLInputElement | null>(null);
