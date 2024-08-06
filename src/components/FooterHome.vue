@@ -48,6 +48,9 @@ footer {
   footer .container {
     flex-direction: column;
     align-items: center;
+
+    gap: 64px;
+    padding-bottom: 50px;
   }
 
   footer img {
