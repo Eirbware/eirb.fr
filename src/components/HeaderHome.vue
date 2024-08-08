@@ -13,6 +13,7 @@
 header {
   padding-top: 20px;
   background-color: var(--primary-color);
+  overflow-x: hidden;
 
   display: flex;
   flex-direction: column;
