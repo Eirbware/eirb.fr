@@ -5,24 +5,6 @@ const assos: LinkGroup = {
   name: 'Associations',
   links: [
     {
-      name: 'AEI',
-      description: 'Junior Entreprise',
-      url: 'https://aei.eirb.fr/',
-      icon: 'associations/x128/aei.png',
-    },
-    {
-      name: 'BAE',
-      description: 'Bureau des alternants',
-      url: 'https://bae.eirb.fr/',
-      icon: 'associations/x128/bae.png',
-    },
-    {
-      name: 'BDA',
-      description: 'Bureau des arts',
-      url: 'https://bda.eirb.fr/',
-      icon: 'associations/x128/bda.png',
-    },
-    {
       name: 'BDE',
       description: 'Bureau des élèves',
       url: 'https://bde.eirb.fr/',
@@ -35,10 +17,22 @@ const assos: LinkGroup = {
       icon: 'associations/x128/bds.png',
     },
     {
-      name: 'Eirbot',
-      description: 'Association de robotique',
-      url: 'https://eirbot.eirb.fr/',
-      icon: 'associations/x128/eirbot.png',
+      name: 'BDA',
+      description: 'Bureau des arts',
+      url: 'https://bda.eirb.fr/',
+      icon: 'associations/x128/bda.png',
+    },
+    {
+      name: 'BAE',
+      description: 'Bureau des alternants',
+      url: 'https://bae.eirb.fr/',
+      icon: 'associations/x128/bae.png',
+    },
+    {
+      name: 'Le Bar',
+      description: 'Caféteria',
+      url: 'https://bar.eirb.fr/',
+      icon: 'associations/x128/bar.png',
     },
     {
       name: 'Eirbware',
@@ -47,16 +41,22 @@ const assos: LinkGroup = {
       icon: 'associations/x128/eirbware.png',
     },
     {
+      name: 'AEI',
+      description: 'Junior Entreprise',
+      url: 'https://aei.eirb.fr/',
+      icon: 'associations/x128/aei.png',
+    },
+    {
+      name: 'Eirbot',
+      description: 'Association de robotique',
+      url: 'https://eirbot.eirb.fr/',
+      icon: 'associations/x128/eirbot.png',
+    },
+    {
       name: 'EirLab',
       description: 'Fablab',
       url: 'https://eirlab.eirb.fr/',
       icon: 'associations/x128/eirlab.png',
-    },
-    {
-      name: 'EirSpace',
-      description: "Association d'aérospatial",
-      url: 'https://eirspace.eirb.fr/',
-      icon: 'associations/x128/eirspace.png',
     },
     {
       name: 'EirSport',
@@ -65,10 +65,10 @@ const assos: LinkGroup = {
       icon: 'associations/x128/eirsport.png',
     },
     {
-      name: 'F6KQH',
-      description: 'Club radioamateur',
-      url: 'https://f6kqh.enseirb-matmeca.fr/',
-      icon: 'associations/x128/f6kqh.png',
+      name: 'EirSpace',
+      description: "Association d'aérospatial",
+      url: 'https://eirspace.eirb.fr/',
+      icon: 'associations/x128/eirspace.png',
     },
     {
       name: "Gala Mos'fête",
@@ -77,10 +77,10 @@ const assos: LinkGroup = {
       icon: 'associations/x128/gala.png',
     },
     {
-      name: 'Le Bar',
-      description: 'Caféteria',
-      url: 'https://bar.eirb.fr/',
-      icon: 'associations/x128/bar.png',
+      name: 'F6KQH',
+      description: 'Club radioamateur',
+      url: 'https://f6kqh.enseirb-matmeca.fr/',
+      icon: 'associations/x128/f6kqh.png',
     },
   ],
 };
