@@ -47,6 +47,12 @@ const clubs: LinkGroup = {
       icon: 'associations/x128/gcc.png',
     },
     {
+      name: 'EirbIA',
+      description: "Club d'intelligence artificielle",
+      url: 'https://ia.eirb.fr/',
+      icon: 'associations/x128/eirbia.png',
+    },
+    {
       name: 'Œno',
       description: "Club d'œnologie",
       url: 'https://oeno.eirb.fr/',
