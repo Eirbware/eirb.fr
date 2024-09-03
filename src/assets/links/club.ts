@@ -47,7 +47,7 @@ const clubs: LinkGroup = {
       icon: 'associations/x128/gcc.png',
     },
     {
-      name: 'EirbIA',
+      name: "Eirb'IA",
       description: "Club d'intelligence artificielle",
       url: 'https://ia.eirb.fr/',
       icon: 'associations/x128/eirbia.png',
