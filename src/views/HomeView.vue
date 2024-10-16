@@ -3,9 +3,20 @@
     <!--
       Event headers
     -->
-    <section id="countdown" v-if="now < end">
-      <h3>Semaine des Arts</h3>
-      <CountDown :date="end" @onFinish="finish" />
+    <section id="countdown" v-if="now < endEvent">
+      <h3>Forum Ingénib</h3>
+      <CountDown :date="endEvent" @onFinish="finish" />
+        <TransitionGroup
+            tag="div"
+            :css="false"
+            @before-enter="onBeforeEnterFn"
+            @enter="onEnterFn"
+            @leave="onLeaveFn"
+        >
+            <section v-for="linkGroup in eventLinks" :id="linkGroup.id" :key="linkGroup.id" class="event-cards">
+                <LinkGroupComponent v-if="linkGroup.id === 'events'" :linkGroup="linkGroup"></LinkGroupComponent>
+            </section>
+        </TransitionGroup>
     </section>
 
     <!--
@@ -46,7 +57,7 @@
         @leave="onLeaveFn"
       >
         <section v-for="linkGroup in filteredLinkGroups" :id="linkGroup.id" :key="linkGroup.id">
-          <LinkGroupComponent :linkGroup="linkGroup"></LinkGroupComponent>
+            <LinkGroupComponent v-if="linkGroup.id !== 'events'" :linkGroup="linkGroup"></LinkGroupComponent>
         </section>
       </TransitionGroup>
     </div>
@@ -65,13 +76,13 @@ const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
 
 const now = new Date();
-const end = new Date('2024-04-14T22:00:00Z');
+const endEvent = new Date('2024-10-18T04:00:00Z');
 
 function finish() {
   const section = document.getElementById('countdown');
 
   if (section !== null) {
-    const newEnd = new Date(end);
+    const newEnd = new Date(endEvent);
     newEnd.setSeconds(newEnd.getSeconds() + 3);
 
     if (newEnd > new Date()) {
@@ -99,6 +110,13 @@ const filteredLinkGroups = computed<LinkGroup[]>(() => {
     .filter((linkGroup) => {
       return linkGroup.links.length > 0;
     });
+});
+
+// link groups containing only 'events' group
+const eventLinks = computed<LinkGroup[]>(() => {
+  return linkGroups.filter((linkGroup) => {
+    return linkGroup.id === 'events';
+  });
 });
 
 // Focus the search input on ":" or "/" keypress
@@ -129,6 +147,10 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.event-cards {
+    margin: -20px 0 30px;
 }
 
 .search {
