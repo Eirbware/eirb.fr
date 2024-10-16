@@ -32,6 +32,7 @@ a {
   grid-gap: 0 10px;
   grid-template-columns: 64px auto;
   grid-template-rows: auto auto;
+  align-items: center;
 
   background-color: var(--card-bkg-color);
   color: var(--text-color);
