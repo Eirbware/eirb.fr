@@ -149,8 +149,20 @@ onUnmounted(() => {
   align-items: center;
 }
 
-.event-cards {
-    margin: -20px 0 30px;
+.count-down {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  h3 { margin: 0; }
+
+  .event-links {
+    margin-top: .5rem;
+    display: flex;
+    gap: 10px;
+  }
+
+}
 }
 
 .search {

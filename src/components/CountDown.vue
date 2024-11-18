@@ -83,7 +83,6 @@ function twoDigits(value: number): string {
 
 <style lang="scss">
 .countdown {
-  margin: 10px 0 50px 0;
   color: var(--text-color);
   display: flex;
   justify-content: center;
