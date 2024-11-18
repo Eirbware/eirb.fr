@@ -5,16 +5,16 @@ const lists: LinkGroup = {
   name: 'Listes',
   links: [
     {
-      name: "Mafi'eirb",
-      description: 'Liste BDE 2024/2025 perdante',
-      url: 'https://mafi.eirb.fr/',
-      icon: 'lists/x128/mafieirb.png',
-    },
-    {
       name: "Dionys'eirb",
       description: 'Liste BDE 2024/2025 gagnante',
       url: 'https://dionys.eirb.fr/',
       icon: 'lists/x128/dionyseirb.png',
+    },
+    {
+      name: "Mafi'eirb",
+      description: 'Liste BDE 2024/2025 perdante',
+      url: 'https://mafi.eirb.fr/',
+      icon: 'lists/x128/mafieirb.png',
     },
     {
       name: "Atlant'eirb",
