@@ -3,20 +3,13 @@
     <!--
       Event headers
     -->
-    <section id="countdown" v-if="now < endEvent">
-      <h3>Forum Ingénib</h3>
-      <CountDown :date="endEvent" @onFinish="finish" />
-        <TransitionGroup
-            tag="div"
-            :css="false"
-            @before-enter="onBeforeEnterFn"
-            @enter="onEnterFn"
-            @leave="onLeaveFn"
-        >
-            <section v-for="linkGroup in eventLinks" :id="linkGroup.id" :key="linkGroup.id" class="event-cards">
-                <LinkGroupComponent v-if="linkGroup.id === 'events'" :linkGroup="linkGroup"></LinkGroupComponent>
-            </section>
-        </TransitionGroup>
+		<section id="countdown" v-if="startShowEvent < now && now < endEvent" class="count-down">
+			<h3>{{ eventTitle }}</h3>
+      <CountDown :date="startEvent" @onFinish="finish" v-if="now < startEvent"/>
+
+      <section class="event-links">
+        <LinkCard v-for="link in events" :key="link.url" :link="link" class="event-card" />
+      </section>
     </section>
 
     <!--
@@ -57,7 +50,7 @@
         @leave="onLeaveFn"
       >
         <section v-for="linkGroup in filteredLinkGroups" :id="linkGroup.id" :key="linkGroup.id">
-            <LinkGroupComponent v-if="linkGroup.id !== 'events'" :linkGroup="linkGroup"></LinkGroupComponent>
+            <LinkGroupComponent :linkGroup="linkGroup"></LinkGroupComponent>
         </section>
       </TransitionGroup>
     </div>
@@ -68,15 +61,28 @@
 import { computed, onMounted, onUnmounted, ref } from 'vue';
 import CountDown from '@/components/CountDown.vue';
 import LinkGroupComponent from '@/components/LinkGroup.vue';
+import LinkCard from '@/components/LinkCard.vue';
 
 import { onBeforeEnterFn, onEnterFn, onLeaveFn } from '@/assets/animations';
-import linkGroups, { type LinkGroup } from '@/assets/links';
+import linkGroups, { type LinkGroup, type Link } from '@/assets/links';
 
 const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
 
 const now = new Date();
-const endEvent = new Date('2024-10-18T04:00:00Z');
+const startShowEvent = new Date('2024-11-24T04:00:00Z');
+const startEvent = new Date('2024-12-01T04:00:00Z');
+const endEvent = new Date('2024-12-31T00:00:00Z');
+
+const eventTitle = "Advent of Code"
+const events: Link[] = [
+    {
+        name: 'Advent of Code',
+        description: "Challenges de programmation journalier pour attendre Noël",
+        url: 'https://adventofcode.com/2024',
+        icon: 'icons/adventofcode.png',
+    },
+];
 
 function finish() {
   const section = document.getElementById('countdown');
@@ -163,6 +169,9 @@ onUnmounted(() => {
   }
 
 }
+
+.event-card {
+	max-width: 30vw;
 }
 
 .search {
