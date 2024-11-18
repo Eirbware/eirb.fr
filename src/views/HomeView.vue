@@ -3,8 +3,8 @@
     <!--
       Event headers
     -->
-		<section id="countdown" v-if="startShowEvent < now && now < endEvent" class="count-down">
-			<h3>{{ eventTitle }}</h3>
+    <section id="countdown" v-if="startShowEvent < now && now < endEvent" class="count-down">
+      <h3>{{ eventTitle }}</h3>
       <CountDown :date="startEvent" @onFinish="finish" v-if="now < startEvent"/>
 
       <section class="event-links">
@@ -171,7 +171,7 @@ onUnmounted(() => {
 }
 
 .event-card {
-	max-width: 30vw;
+  max-width: 30vw;
 }
 
 .search {
