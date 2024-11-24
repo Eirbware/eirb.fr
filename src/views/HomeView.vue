@@ -78,7 +78,7 @@ const eventTitle = "Advent of Code"
 const events: Link[] = [
     {
         name: 'Advent of Code',
-        description: "Challenges de programmation journalier pour attendre Noël",
+        description: "Challenges de programmation quotidiens pour attendre Noël",
         url: 'https://adventofcode.com/2024',
         icon: 'icons/adventofcode.png',
     },
