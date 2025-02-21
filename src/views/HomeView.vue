@@ -70,17 +70,23 @@ const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
 
 const now = new Date();
-const startShowEvent = new Date('2024-11-24T04:00:00Z');
-const startEvent = new Date('2024-12-01T04:00:00Z');
-const endEvent = new Date('2024-12-31T00:00:00Z');
+const startShowEvent = new Date("2025-02-16T23:00:00Z")
+const startEvent = new Date("2025-02-16T23:00:00Z")
+const endEvent = new Date("2025-02-26T23:00:00Z")
 
-const eventTitle = "Advent of Code"
+const eventTitle = "Campages BDE"
 const events: Link[] = [
     {
-        name: 'Advent of Code',
-        description: "Challenges de programmation quotidiens pour attendre Noël",
-        url: 'https://adventofcode.com/2024',
-        icon: 'icons/adventofcode.png',
+        name: "Minist'eirb",
+        description: "Liste BDE ministérielle",
+        url: 'https://minist.eirb.fr',
+        icon: 'lists/ministeirb.png',
+    },
+    {
+        name: "Gladiat'eirb",
+        description: "Liste BDE de gladiateurs",
+        url: 'https://gladiat.eirb.fr',
+        icon: 'lists/gladiateirb.png',
     },
 ];
 
@@ -168,6 +174,10 @@ onUnmounted(() => {
     gap: 10px;
   }
 
+	.event-card {
+		max-width: 30ch;
+	}
+
 }
 
 .event-card {
@@ -197,5 +207,11 @@ onUnmounted(() => {
 
 .container {
   max-width: 1200px;
+}
+
+@media screen and (max-width: 450px) {
+.event-links {
+	flex-direction: column;
+}
 }
 </style>
