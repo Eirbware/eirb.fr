@@ -71,16 +71,22 @@ const search = ref('');
 
 const now = new Date();
 const startShowEvent = new Date("2025-02-16T23:00:00Z")
-const startEvent = new Date("2025-02-16T23:00:00Z")
-const endEvent = new Date("2025-02-26T23:00:00Z")
+const startEvent = new Date("2025-02-27T23:00:00Z")
+const endEvent = new Date("2025-03-09T23:00:00Z")
 
-const eventTitle = "Campages BDE"
+const eventTitle = "Vote Campagnes BDE"
 const events: Link[] = [
     {
         name: "Minist'eirb",
         description: "Liste BDE ministérielle",
         url: 'https://minist.eirb.fr',
         icon: 'lists/ministeirb.png',
+    },
+    {
+        name: "Vote",
+        description: "Votez pour votre liste préférée",
+        url: 'https://vote.eirb.fr',
+        icon: 'icons/vote.svg',
     },
     {
         name: "Gladiat'eirb",
