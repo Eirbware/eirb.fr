@@ -74,7 +74,7 @@ const startShowEvent = new Date("2025-03-23T23:00:00Z")
 const startEvent = new Date("2025-03-23T23:00:00Z")
 const endEvent = new Date("2025-04-06T23:00:00Z")
 
-const eventTitle = "Vote Campagnes BDE"
+const eventTitle = "Vote Campagnes BDS"
 const events: Link[] = [
     {
         name: "Terminat'eirb",
