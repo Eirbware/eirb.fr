@@ -5,7 +5,7 @@
     -->
     <section id="countdown" v-if="startShowEvent < now && now < endEvent" class="count-down">
       <h3>{{ eventTitle }}</h3>
-      <CountDown :date="startEvent" @onFinish="finish" v-if="now < startEvent"/>
+      <CountDown :date="startEvent" @onFinish="finish" v-if="now < startEvent" />
 
       <section class="event-links">
         <LinkCard v-for="link in events" :key="link.url" :link="link" class="event-card" />
@@ -50,7 +50,7 @@
         @leave="onLeaveFn"
       >
         <section v-for="linkGroup in filteredLinkGroups" :id="linkGroup.id" :key="linkGroup.id">
-            <LinkGroupComponent :linkGroup="linkGroup"></LinkGroupComponent>
+          <LinkGroupComponent :linkGroup="linkGroup"></LinkGroupComponent>
         </section>
       </TransitionGroup>
     </div>
@@ -64,36 +64,45 @@ import LinkGroupComponent from '@/components/LinkGroup.vue';
 import LinkCard from '@/components/LinkCard.vue';
 
 import { onBeforeEnterFn, onEnterFn, onLeaveFn } from '@/assets/animations';
-import linkGroups, { type LinkGroup, type Link } from '@/assets/links';
+import tmpLinkGroups, { type LinkGroup, type Link } from '@/assets/links';
+
+console.log(tmpLinkGroups);
+const linkGroups = tmpLinkGroups.filter((el) => {
+  if (el.id === 'vpn') {
+    return window.location.pathname === '/vpn';
+  }
+  return true;
+});
+console.log(linkGroups);
 
 const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
 
 const now = new Date();
-const startShowEvent = new Date("2025-02-16T23:00:00Z")
-const startEvent = new Date("2025-02-27T23:00:00Z")
-const endEvent = new Date("2025-03-09T23:00:00Z")
+const startShowEvent = new Date('2025-02-16T23:00:00Z');
+const startEvent = new Date('2025-02-27T23:00:00Z');
+const endEvent = new Date('2025-03-09T23:00:00Z');
 
-const eventTitle = "Vote Campagnes BDE"
+const eventTitle = 'Vote Campagnes BDE';
 const events: Link[] = [
-    {
-        name: "Minist'eirb",
-        description: "Liste BDE ministérielle",
-        url: 'https://minist.eirb.fr',
-        icon: 'lists/ministeirb.png',
-    },
-    {
-        name: "Vote",
-        description: "Votez pour votre liste préférée",
-        url: 'https://vote.eirb.fr',
-        icon: 'icons/vote.svg',
-    },
-    {
-        name: "Gladiat'eirb",
-        description: "Liste BDE de gladiateurs",
-        url: 'https://gladiat.eirb.fr',
-        icon: 'lists/gladiateirb.png',
-    },
+  {
+    name: "Minist'eirb",
+    description: 'Liste BDE ministérielle',
+    url: 'https://minist.eirb.fr',
+    icon: 'lists/ministeirb.png',
+  },
+  {
+    name: 'Vote',
+    description: 'Votez pour votre liste préférée',
+    url: 'https://vote.eirb.fr',
+    icon: 'icons/vote.svg',
+  },
+  {
+    name: "Gladiat'eirb",
+    description: 'Liste BDE de gladiateurs',
+    url: 'https://gladiat.eirb.fr',
+    icon: 'lists/gladiateirb.png',
+  },
 ];
 
 function finish() {
@@ -170,20 +179,21 @@ onUnmounted(() => {
 .count-down {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 
-  h3 { margin: 0; }
+  h3 {
+    margin: 0;
+  }
 
   .event-links {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     display: flex;
     gap: 10px;
   }
 
-	.event-card {
-		max-width: 30ch;
-	}
-
+  .event-card {
+    max-width: 30ch;
+  }
 }
 
 .event-card {
@@ -216,8 +226,8 @@ onUnmounted(() => {
 }
 
 @media screen and (max-width: 450px) {
-.event-links {
-	flex-direction: column;
-}
+  .event-links {
+    flex-direction: column;
+  }
 }
 </style>
