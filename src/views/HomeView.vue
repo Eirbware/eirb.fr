@@ -71,8 +71,8 @@ const search = ref('');
 
 const now = new Date();
 const startShowEvent = new Date("2025-03-23T23:00:00Z")
-const startEvent = new Date("2025-03-23T23:00:00Z")
-const endEvent = new Date("2025-04-06T23:00:00Z")
+const startEvent = new Date("2025-03-30T23:00:00Z")
+const endEvent = new Date("2025-04-02T23:00:00Z")
 
 const eventTitle = "Vote Campagnes BDS"
 const events: Link[] = [
@@ -82,12 +82,12 @@ const events: Link[] = [
         url: 'https://terminat.eirb.fr',
         icon: 'lists/terminateirb.png',
     },
-    //{
-        //name: "Vote",
-        //description: "Votez pour votre liste préférée",
-        //url: 'https://vote.eirb.fr',
-        //icon: 'icons/vote.svg',
-    //},
+    {
+        name: "Vote",
+        description: "Votez pour votre liste préférée",
+        url: 'https://vote.eirb.fr',
+        icon: 'icons/vote.svg',
+    },
     {
         name: "Hollywood'eirb",
         description: "Liste BDS cinématographique",
