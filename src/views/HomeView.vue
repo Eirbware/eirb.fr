@@ -66,14 +66,12 @@ import LinkCard from '@/components/LinkCard.vue';
 import { onBeforeEnterFn, onEnterFn, onLeaveFn } from '@/assets/animations';
 import tmpLinkGroups, { type LinkGroup, type Link } from '@/assets/links';
 
-console.log(tmpLinkGroups);
 const linkGroups = tmpLinkGroups.filter((el) => {
   if (el.id === 'vpn') {
     return window.location.pathname === '/vpn';
   }
   return true;
 });
-console.log(linkGroups);
 
 const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
