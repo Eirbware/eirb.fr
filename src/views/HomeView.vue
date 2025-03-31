@@ -71,8 +71,8 @@ const search = ref('');
 
 const now = new Date();
 const startShowEvent = new Date("2025-03-23T23:00:00Z")
-const startEvent = new Date("2025-03-31T23:00:00Z")
-const endEvent = new Date("2025-04-02T23:00:00Z")
+const startEvent = new Date("2025-04-01T23:00:00Z")
+const endEvent = new Date("2025-04-03T15:30:00Z")
 
 const eventTitle = "Vote Campagnes BDS"
 const events: Link[] = [
