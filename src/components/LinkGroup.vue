@@ -1,5 +1,5 @@
 <template>
-   <h3 v-if="linkGroup.id !== 'events'">{{ linkGroup.name }}</h3>
+  <h3 v-if="linkGroup.id !== 'events'">{{ linkGroup.name }}</h3>
 
   <TransitionGroup
     v-if="linkGroup.id !== 'events'"
@@ -21,9 +21,9 @@
     @enter="onEnterFn"
     @leave="onLeaveFn"
     class="event-cards"
-    >
-        <LinkCard v-for="link in linkGroup.links" :key="link.url" :link="link" />
-    </TransitionGroup>
+  >
+    <LinkCard v-for="link in linkGroup.links" :key="link.url" :link="link" />
+  </TransitionGroup>
 </template>
 
 <script setup lang="ts">
@@ -59,6 +59,6 @@ const props = defineProps<{
   gap: 20px;
   margin: 0 auto;
   width: 100%;
-    max-width: 1200px;
+  max-width: 1200px;
 }
 </style>

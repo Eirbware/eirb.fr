@@ -77,30 +77,30 @@ const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
 
 const now = new Date();
-const startShowEvent = new Date("2025-03-23T23:00:00Z")
-const startEvent = new Date("2025-04-01T18:00:00Z")
-const endEvent = new Date("2025-04-03T14:30:00Z")
+const startShowEvent = new Date('2025-03-23T23:00:00Z');
+const startEvent = new Date('2025-04-01T18:00:00Z');
+const endEvent = new Date('2025-04-03T14:30:00Z');
 
-const eventTitle = "Vote Campagnes BDS"
+const eventTitle = 'Vote Campagnes BDS';
 const events: Link[] = [
-    {
-        name: "Terminat'eirb",
-        description: "Liste BDS du future",
-        url: 'https://terminat.eirb.fr',
-        icon: 'lists/terminateirb.png',
-    },
-    {
-        name: "Vote",
-        description: "Votez pour votre liste préférée",
-        url: 'https://vote.eirb.fr',
-        icon: 'icons/vote.svg',
-    },
-    {
-        name: "Hollywood'eirb",
-        description: "Liste BDS cinématographique",
-        url: 'https://hollywood.eirb.fr',
-        icon: 'lists/hollywoodeirb.png',
-    },
+  {
+    name: "Terminat'eirb",
+    description: 'Liste BDS du future',
+    url: 'https://terminat.eirb.fr',
+    icon: 'lists/terminateirb.png',
+  },
+  {
+    name: 'Vote',
+    description: 'Votez pour votre liste préférée',
+    url: 'https://vote.eirb.fr',
+    icon: 'icons/vote.svg',
+  },
+  {
+    name: "Hollywood'eirb",
+    description: 'Liste BDS cinématographique',
+    url: 'https://hollywood.eirb.fr',
+    icon: 'lists/hollywoodeirb.png',
+  },
 ];
 
 function finish() {
@@ -189,10 +189,10 @@ onUnmounted(() => {
     gap: 10px;
   }
 
-	.event-card {
-		max-width: 30ch;
-        width: 30ch;
-	}
+  .event-card {
+    max-width: 30ch;
+    width: 30ch;
+  }
 }
 
 .event-card {
