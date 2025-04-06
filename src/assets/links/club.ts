@@ -53,6 +53,12 @@ const clubs: LinkGroup = {
       icon: 'associations/x128/eirbia.png',
     },
     {
+      name: "Nlog'eirb",
+      description: "Club de programmation compétitive",
+      url: 'https://nlog.eirb.fr/',
+      icon: 'associations/x128/nlogeirb.png',
+    },
+    {
       name: 'Œno',
       description: "Club d'œnologie",
       url: 'https://oeno.eirb.fr/',
