@@ -1,4 +1,11 @@
 <template>
+
+  <div class="warning-banner">
+    <p>⚠️ Eirbware rejoint la CGT'Eirb et se met en grève.⚠️</p>
+
+    Subséquemment, les services peuvent être perturbés.
+  </div>
+
   <div id="home">
     <!--
       Event headers
@@ -88,6 +95,12 @@ const events: Link[] = [
     description: 'Liste BDA enflammée',
     url: 'https://feufoll.eirb.fr',
     icon: 'lists/feufolleirb.png',
+  },
+  {
+    name: "CGT'eirb",
+    description: 'La liste de tous les enseirbiens',
+    url: 'https://cgt.eirb.fr',
+    icon: 'lists/cgteirb.png',
   },
 ];
 
@@ -215,6 +228,28 @@ onUnmounted(() => {
 @media screen and (max-width: 450px) {
   .event-links {
     flex-direction: column;
+  }
+}
+
+.warning-banner {
+  background-color: #D50000; /* Bright militant red */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Anton', sans-serif;
+  border-top: 3px solid #8B0000;
+  border-bottom: 3px solid #8B0000;
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    background-color: #D50000;
+  }
+  to {
+    background-color: #FF0000;
   }
 }
 </style>
