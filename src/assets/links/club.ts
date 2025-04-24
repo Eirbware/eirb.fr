@@ -17,6 +17,12 @@ const clubs: LinkGroup = {
       icon: 'associations/x128/cookeirb.png',
     },
     {
+      name: "Couturi'eirb",
+      description: 'Club de couture',
+      url: 'https://couturi.eirb.fr/',
+      icon: 'associations/x128/couturieirb.png',
+    },
+    {
       name: "CheriF'eirb",
       description: 'Club de radio',
       url: 'https://radio.eirb.fr/',
