@@ -83,6 +83,12 @@ const clubs: LinkGroup = {
       icon: 'associations/x128/unlock.png',
     },
     {
+      name: 'VOST',
+      description: 'Club vidéo',
+      url: 'https://vost.eirb.fr/',
+      icon: 'associations/x128/vost.png',
+    },
+    {
       name: 'Zik',
       description: 'Club de musique',
       url: 'https://zik.eirb.fr/',
