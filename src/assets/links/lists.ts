@@ -18,15 +18,21 @@ const lists: LinkGroup = {
     },
     {
       name: "Hollywood'eirb",
-      description: 'Liste BDS 2024/2025 gagnante',
+      description: 'Liste BDS 2025/2026 gagnante',
       url: 'https://hollywood.eirb.fr/',
       icon: 'lists/x128/hollywoodeirb.png',
     },
     {
       name: "Terminat'eirb",
-      description: 'Liste BDS 2024/2025 perdante',
+      description: 'Liste BDS 2025/2026 perdante',
       url: 'https://terminat.eirb.fr/',
       icon: 'lists/x128/terminateirb.png',
+    },
+    {
+      name: "Feufoll'eirb",
+      description: 'Liste BDA 2025/2026',
+      url: 'https://feufoll.eirb.fr/',
+      icon: 'lists/x128/feufolleirb.png',
     },
     {
       name: "Dionys'eirb",
