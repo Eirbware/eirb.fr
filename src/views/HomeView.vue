@@ -81,14 +81,8 @@ const startShowEvent = new Date('2025-04-13T22:00:00Z');
 const startEvent = new Date('2025-04-13T22:00:00Z');
 const endEvent = new Date('2025-04-25T22:00:00Z');
 
-const eventTitle = 'Campagnes BDA';
+const eventTitle = '';
 const events: Link[] = [
-  {
-    name: "Feufoll'eirb",
-    description: 'Liste BDA enflammée',
-    url: 'https://feufoll.eirb.fr',
-    icon: 'lists/feufolleirb.png',
-  },
 ];
 
 function finish() {
