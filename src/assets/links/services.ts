@@ -34,6 +34,12 @@ const services: LinkGroup = {
       url: 'https://ftp.eirb.fr',
       icon: 'icons/ftp.svg',
     },
+    {
+      name: "docs",
+      description: 'Documentation de l\'archecture des serveurs d\'eirbware',
+      url: 'https://docs.eirb.fr',
+      icon: 'icons/docs.png',
+    },
     /*{
               "name": "Scan'eirb",
               "description": "Application de gestion de billeterie et d'encaissement d'événements",
