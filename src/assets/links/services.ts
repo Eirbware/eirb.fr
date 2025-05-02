@@ -16,6 +16,24 @@ const services: LinkGroup = {
       url: 'https://vote.eirb.fr',
       icon: 'icons/vote.svg',
     },
+    {
+      name: 'com',
+      description: 'Utilitaire pour écrire des com telegram en markdown',
+      url: 'https://com.eirb.fr',
+      icon: 'icons/com.svg',
+    },
+    {
+      name: 'Documentation',
+      description: "Documentation d'Eirbware, pour Eirbware et les respos web",
+      url: 'https://docs.eirb.fr',
+      icon: 'icons/docs.svg',
+    },
+    {
+      name: 'Github Eirbware',
+      description: "Organisation d'Eirbware sur github",
+      url: 'https://github.com/Eirbware',
+      icon: 'icons/github.svg',
+    },
     /*{
               "name": "EirbAuth",
               "description": "Service d'authentification fédérée Eirbware",
@@ -28,12 +46,14 @@ const services: LinkGroup = {
               "url": "https://shotgun.eirb.fr",
               "icon": "icons/target.svg"
           },*/
+         /*
     {
       name: "FTP'eirb",
       description: 'Accès FTP pour la gestion des sites web hébergés par Eirbware',
       url: 'https://ftp.eirb.fr',
       icon: 'icons/ftp.svg',
     },
+    */
     /*{
               "name": "Scan'eirb",
               "description": "Application de gestion de billeterie et d'encaissement d'événements",
