@@ -29,10 +29,16 @@ const services: LinkGroup = {
               "icon": "icons/target.svg"
           },*/
     {
-      name: "FTP'eirb",
-      description: 'Accès FTP pour la gestion des sites web hébergés par Eirbware',
-      url: 'https://ftp.eirb.fr',
-      icon: 'icons/ftp.svg',
+      name: "Com",
+      description: 'Aide à la rédaction des com Telegram',
+      url: 'https://com.eirb.fr',
+      icon: 'icons/com.png',
+    },
+    {
+      name: "docs",
+      description: 'Documentation de l\'archecture des serveurs d\'eirbware',
+      url: 'https://docs.eirb.fr',
+      icon: 'icons/docs.png',
     },
     /*{
               "name": "Scan'eirb",
