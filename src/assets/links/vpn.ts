@@ -13,7 +13,7 @@ const vpn: LinkGroup = {
     {
       name: 'Connect',
       description: 'Console administrateur de keycloak',
-      url: 'https://adminconnect.vpn.eirb.fr/admin/eirb/console',
+      url: 'https://connect.vpn.eirb.fr/admin/eirb/console',
       icon: 'icons/connect.svg',
     },
     {
