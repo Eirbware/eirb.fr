@@ -30,15 +30,21 @@ const services: LinkGroup = {
           },*/
     {
       name: "Com",
-      description: 'Aide à la rédaction des com Telegram',
+      description: 'Utilitaire pour écrire des com telegram en markdown',
       url: 'https://com.eirb.fr',
       icon: 'icons/com.png',
     },
     {
-      name: "docs",
-      description: 'Documentation de l\'archecture des serveurs d\'eirbware',
+      name: "Documentation",
+      description: "Documentation d'Eirbware, pour Eirbware et les respos web",
       url: 'https://docs.eirb.fr',
       icon: 'icons/docs.png',
+    },
+        {
+      name: 'Github Eirbware',
+      description: "Organisation d'Eirbware sur github",
+      url: 'https://github.com/Eirbware',
+      icon: 'icons/github.svg',
     },
     /*{
               "name": "Scan'eirb",
