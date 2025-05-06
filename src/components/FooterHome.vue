@@ -3,7 +3,7 @@
     <div class="container">
       <div>
         <p>
-          Copyright <span style="cursor: pointer" @click="toggleDarkTheme()">©</span> 2024
+          Copyright <span style="cursor: pointer" @click="toggleDarkTheme()">©</span> 2025
           Association Eirbware.
         </p>
         <p>Tous droits réservés.</p>
