@@ -2,7 +2,7 @@ import type { LinkGroup } from './links';
 
 const protectRedirectURL = (id: string) => `https://eirb.fr/protect/link.php?name=${id}`;
 
-    const channels: LinkGroup = {
+const channels: LinkGroup = {
     id: 'channels',
     name: 'Canaux',
     links: [
