@@ -1,16 +1,24 @@
 <template>
-  <a :href="link.url" :key="link.url" rel="nofollow">
-    <div class="card">
-      <img :src="'img/' + link.icon" loading="lazy" />
+  <div class="card-container">
+    <a :href="link.url" :key="link.url" rel="nofollow">
+      <div class="card">
+        <img :src="'img/' + link.icon" loading="lazy" />
 
-      <h4>{{ link.name }}</h4>
-      <p>{{ link.description }}</p>
-    </div>
-  </a>
+        <h4>{{ link.name }}</h4>
+        <p>{{ link.description }}</p>
+      </div>
+    </a>
+    <a v-if="link.additionalLink" :href="link.additionalLink.url" :key="link.additionalLink.url" rel="nofollow">
+      <div class="card-pin">
+        <img :src="'img/' + getIconURIForLinkType(link.additionalLink.type)" loading="lazy" />
+      </div>
+    </a>
+  </div>
 </template>
 
 <script setup lang="ts">
 import type { Link } from '@/assets/links/index';
+import { getIconURIForLinkType } from '@/assets/links/index';
 
 const props = defineProps<{
   link: Link;
@@ -18,10 +26,24 @@ const props = defineProps<{
 </script>
 
 <style scoped lang="scss">
-a {
-  text-decoration: none;
-  border-radius: 10px;
+.card-container {
+  position: relative;
+  /* width: 100%; */
+
+  transition:
+    transform 0.2s ease-in-out;
+  &:hover {
+    transform: translate(4px, -4px);
+  }
+  a {
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+  }
+
 }
+
 
 .card {
   padding: 10px;
@@ -39,12 +61,10 @@ a {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
   transition:
-    transform 0.2s ease-in-out,
     box-shadow 0.2s ease-in-out;
 
   &:hover {
     box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.4);
-    transform: translate(4px, -4px);
   }
 
   img {
@@ -70,6 +90,35 @@ a {
     grid-row: 2;
 
     margin: 0;
+  }
+}
+
+.card-pin {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  height: 27px;
+  width: 27px;
+  aspect-ratio: 1/1;
+  
+  border-radius: 50%;
+
+  background: none;
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.4);
+  transition:
+    box-shadow 0.2s ease-in-out;
+  &:hover {
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.8);
+    background-color: var(--bkg-color);
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
   }
 }
 </style>

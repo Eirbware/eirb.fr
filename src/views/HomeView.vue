@@ -64,7 +64,7 @@ import LinkGroupComponent from '@/components/LinkGroup.vue';
 import LinkCard from '@/components/LinkCard.vue';
 
 import { onBeforeEnterFn, onEnterFn, onLeaveFn } from '@/assets/animations';
-import tmpLinkGroups, { type LinkGroup, type Link } from '@/assets/links';
+import { links as tmpLinkGroups, type LinkGroup, type Link } from '@/assets/links';
 
 const linkGroups = tmpLinkGroups.filter((el) => {
   if (el.id === 'vpn') {

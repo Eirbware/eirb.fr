@@ -1,4 +1,6 @@
-import type { LinkGroup } from './links';
+import { AdditionalLinkType, type LinkGroup } from './links';
+
+const protectRedirectURL = (id: string) => `https://eirb.fr/protect/link.php?name=${id}`;
 
 const assos: LinkGroup = {
   id: 'associations',
@@ -44,6 +46,11 @@ const assos: LinkGroup = {
       name: 'AEI',
       description: 'Junior Entreprise',
       url: 'https://aei.eirb.fr/',
+      additionalLink: {
+        description: 'Linktree AEI',
+        url: protectRedirectURL('linktreeAEI'),
+        type: AdditionalLinkType.LINKTREE,
+      },
       icon: 'associations/x128/aei.png',
     },
     {
