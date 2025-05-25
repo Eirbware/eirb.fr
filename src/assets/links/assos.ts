@@ -11,30 +11,55 @@ const assos: LinkGroup = {
       description: 'Bureau des élèves',
       url: 'https://bde.eirb.fr/',
       icon: 'associations/x128/bde.png',
+      additionalLink: {
+        url: protectRedirectURL("telegramBDE"),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram BDE"
+      }
     },
     {
       name: 'BDS',
       description: 'Bureau des sports',
       url: 'https://bds.eirb.fr/',
       icon: 'associations/x128/bds.png',
+      additionalLink: {
+        url: protectRedirectURL("telegramBDS"),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Canal des escrocs"
+      }
     },
     {
       name: 'BDA',
       description: 'Bureau des arts',
       url: 'https://bda.eirb.fr/',
       icon: 'associations/x128/bda.png',
+      additionalLink: {
+        url: protectRedirectURL("linktreeBDA"),
+        type: AdditionalLinkType.LINKTREE,
+        description: "Linktree du meilleur Bureau"
+      }
     },
     {
       name: 'BAE',
       description: 'Bureau des alternants',
       url: 'https://bae.eirb.fr/',
       icon: 'associations/x128/bae.png',
+      additionalLink: {
+        url: protectRedirectURL("telegramBAE"),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram BAE"
+      }
     },
     {
       name: 'Le Bar',
       description: 'Caféteria',
       url: 'https://bar.eirb.fr/',
       icon: 'associations/x128/bar.png',
+      additionalLink: {
+        url: protectRedirectURL("telegramBAR"),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram BAR"
+      }
     },
     {
       name: 'Eirbware',

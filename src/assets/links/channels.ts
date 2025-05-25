@@ -7,45 +7,9 @@ const channels: LinkGroup = {
     name: 'Canaux',
     links: [
         {
-            name: "Linktree AEI",
-            description: "",
-            url: protectRedirectURL("linktreeAEI"),
-            icon: "links/linktree.svg"
-        },
-        {
             name: "Telegram Arte",
             description: "",
             url: protectRedirectURL("telegramArte"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram BAE",
-            description: "",
-            url: protectRedirectURL("telegramBAE"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram BAR",
-            description: "",
-            url: protectRedirectURL("telegramBAR"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Linktree BDA",
-            description: "",
-            url: protectRedirectURL("linktreeBDA"),
-            icon: "links/linktree.svg"
-        },
-        {
-            name: "Telegram BDE",
-            description: "",
-            url: protectRedirectURL("telegramBDE"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram BDS",
-            description: "",
-            url: protectRedirectURL("telegramBDS"),
             icon: "links/telegram.svg"
         },
         {
