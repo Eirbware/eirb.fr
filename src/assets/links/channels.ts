@@ -1,17 +1,9 @@
-import type { LinkGroup } from './links';
-
-const protectRedirectURL = (id: string) => `https://eirb.fr/protect/link.php?name=${id}`;
+import { protectRedirectURL, type LinkGroup } from './links';
 
 const channels: LinkGroup = {
     id: 'channels',
-    name: 'Canaux',
+    name: 'Canaux des autres Organisations',
     links: [
-        {
-            name: "Linktree AEI",
-            description: "",
-            url: protectRedirectURL("linktreeAEI"),
-            icon: "links/linktree.svg"
-        },
         {
             name: "Telegram Arte",
             description: "",
@@ -19,46 +11,10 @@ const channels: LinkGroup = {
             icon: "links/telegram.svg"
         },
         {
-            name: "Telegram BAE",
-            description: "",
-            url: protectRedirectURL("telegramBAE"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram BAR",
-            description: "",
-            url: protectRedirectURL("telegramBAR"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Linktree BDA",
-            description: "",
-            url: protectRedirectURL("linktreeBDA"),
-            icon: "links/linktree.svg"
-        },
-        {
-            name: "Telegram BDE",
-            description: "",
-            url: protectRedirectURL("telegramBDE"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram BDS",
-            description: "",
-            url: protectRedirectURL("telegramBDS"),
-            icon: "links/telegram.svg"
-        },
-        {
             name: "Linktree BINKS",
             description: "",
             url: protectRedirectURL("telegramBINKS"),
             icon: "links/linktree.svg"
-        },
-        {
-            name: "Telegram Billeirb",
-            description: "",
-            url: protectRedirectURL("telegramBilleirb"),
-            icon: "links/telegram.svg"
         },
         {
             name: "Telegram Bouquin'eirb",
@@ -76,36 +32,6 @@ const channels: LinkGroup = {
             name: "Telegram CluBee",
             description: "",
             url: protectRedirectURL("telegramCluBee"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Théâtre",
-            description: "",
-            url: protectRedirectURL("telegramTheatre"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Zik",
-            description: "",
-            url: protectRedirectURL("telegramZik"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Oeno",
-            description: "",
-            url: protectRedirectURL("telegramOeno"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Cook'eirb",
-            description: "",
-            url: protectRedirectURL("telegramCook"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Couturi'eirb",
-            description: "",
-            url: protectRedirectURL("telegramCouturieirb"),
             icon: "links/telegram.svg"
         },
         {
@@ -133,51 +59,9 @@ const channels: LinkGroup = {
             icon: "links/telegram.svg"
         },
         {
-            name: "Telegram Eirlab",
-            description: "",
-            url: protectRedirectURL("telegramEirlab"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Eirspace",
-            description: "",
-            url: protectRedirectURL("telegramEirspace"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Eirsport",
-            description: "",
-            url: protectRedirectURL("telegramEirsport"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Eirb'ia",
-            description: "",
-            url: protectRedirectURL("telegramEirbia"),
-            icon: "links/telegram.svg"
-        },
-        {
             name: "Telegram Eirbees",
             description: "",
             url: protectRedirectURL("telegramEirbees"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Eirbline",
-            description: "",
-            url: protectRedirectURL("telegramEirbline"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Eirbot",
-            description: "",
-            url: protectRedirectURL("telegramEirbot"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Eirbware",
-            description: "",
-            url: protectRedirectURL("telegramEirbware"),
             icon: "links/telegram.svg"
         },
         {
@@ -208,12 +92,6 @@ const channels: LinkGroup = {
             name: "Discord Foyer",
             description: "",
             url: protectRedirectURL("discordFoyer"),
-            icon: "links/discord.svg"
-        },
-        {
-            name: "Discord GCC",
-            description: "",
-            url: protectRedirectURL("discordGCC"),
             icon: "links/discord.svg"
         },
         {
@@ -265,12 +143,6 @@ const channels: LinkGroup = {
             icon: "links/telegram.svg"
         },
         {
-            name: "Telegram Pixeirb",
-            description: "",
-            url: protectRedirectURL("telegramPixeirb"),
-            icon: "links/telegram.svg"
-        },
-        {
             name: "Telegram Planet'eirb",
             description: "",
             url: protectRedirectURL("telegramPlaneteirb"),
@@ -298,18 +170,6 @@ const channels: LinkGroup = {
             name: "Telegram Supporteirb",
             description: "",
             url: protectRedirectURL("telegramSupporteirb"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Discord Unlock",
-            description: "",
-            url: protectRedirectURL("discordUnlock"),
-            icon: "links/discord.svg"
-        },
-        {
-            name: "Telegram Vost",
-            description: "",
-            url: protectRedirectURL("telegramVost"),
             icon: "links/telegram.svg"
         },
     ],
