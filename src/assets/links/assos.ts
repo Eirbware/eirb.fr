@@ -1,6 +1,4 @@
-import { AdditionalLinkType, type LinkGroup } from './links';
-
-const protectRedirectURL = (id: string) => `https://eirb.fr/protect/link.php?name=${id}`;
+import { AdditionalLinkType, protectRedirectURL, type LinkGroup } from './links';
 
 const assos: LinkGroup = {
   id: 'associations',

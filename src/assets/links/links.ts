@@ -8,7 +8,7 @@ enum AdditionalLinkType {
   FACEBOOK,
   LINKEDIN,
   MESSENGER,
-  YOUTUBE
+  YOUTUBE,
 }
 
 const ICON_OF_LINK_TYPES: Record<AdditionalLinkType, string> = {
@@ -48,5 +48,7 @@ interface LinkGroup {
   links: Link[];
 }
 
+const protectRedirectURL = (id: string) => `https://eirb.fr/protect/link.php?name=${id}`;
+
 export type { Link, LinkGroup, AdditionalLink };
-export { AdditionalLinkType, getIconURIForLinkType };
+export { AdditionalLinkType, getIconURIForLinkType, protectRedirectURL };
