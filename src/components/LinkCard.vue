@@ -10,7 +10,7 @@
     </a>
     <a v-if="link.additionalLink" :href="link.additionalLink.url" :key="link.additionalLink.url" rel="nofollow">
       <div class="card-pin">
-        <img :src="'img/' + getIconURIForLinkType(link.additionalLink.type)" loading="lazy" />
+        <img :src="'img/' + getIconURIForLinkType(link.additionalLink.type)" :alt="'additional link for ' + link.name" :title="link.additionalLink.description" loading="lazy" />
       </div>
     </a>
   </div>
