@@ -1,6 +1,6 @@
 <template>
   <div class="card-container">
-    <a :href="link.url" :key="link.url" rel="nofollow">
+    <a v-if="link.url?true:false" :href="link.url" :key="link.url" rel="nofollow">
       <div class="card">
         <img :src="'img/' + link.icon" loading="lazy" />
 
@@ -8,6 +8,13 @@
         <p>{{ link.description }}</p>
       </div>
     </a>
+    <div v-else class="card">
+      <img :src="'img/' + link.icon" loading="lazy" />
+
+      <h4 class="no-link">{{ link.name }}</h4>
+      <p>{{ link.description }}</p>
+    </div>
+
     <a v-if="link.additionalLink" :href="link.additionalLink.url" :key="link.additionalLink.url" rel="nofollow">
       <div class="card-pin">
         <img :src="'img/' + getIconURIForLinkType(link.additionalLink.type)" :alt="'additional link for ' + link.name" :title="link.additionalLink.description" loading="lazy" />
@@ -83,6 +90,10 @@ const props = defineProps<{
     font-size: 23px;
     color: #3498db;
     text-decoration: underline;
+  }
+  h4.no-link {
+    color: #716e75;
+    text-decoration: none;
   }
 
   p {

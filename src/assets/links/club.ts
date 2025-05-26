@@ -7,7 +7,6 @@ const clubs: LinkGroup = {
     {
       name: "Bill'eirb",
       description: 'Club de billard',
-      url: 'https://bill.eirb.fr/',
       icon: 'associations/x128/billeirb.png',
       additionalLink: {
         url: protectRedirectURL('telegramBilleirb'),
