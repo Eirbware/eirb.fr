@@ -12,10 +12,10 @@ const assos: LinkGroup = {
       url: 'https://bde.eirb.fr/',
       icon: 'associations/x128/bde.png',
       additionalLink: {
-        url: protectRedirectURL("telegramBDE"),
+        url: protectRedirectURL('telegramBDE'),
         type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram BDE"
-      }
+        description: 'Telegram officiel du BDE',
+      },
     },
     {
       name: 'BDS',
@@ -23,10 +23,10 @@ const assos: LinkGroup = {
       url: 'https://bds.eirb.fr/',
       icon: 'associations/x128/bds.png',
       additionalLink: {
-        url: protectRedirectURL("telegramBDS"),
+        url: protectRedirectURL('telegramBDS'),
         type: AdditionalLinkType.TELEGRAM,
-        description: "Canal des escrocs"
-      }
+        description: 'Canal des escrocs',
+      },
     },
     {
       name: 'BDA',
@@ -34,10 +34,10 @@ const assos: LinkGroup = {
       url: 'https://bda.eirb.fr/',
       icon: 'associations/x128/bda.png',
       additionalLink: {
-        url: protectRedirectURL("linktreeBDA"),
+        url: protectRedirectURL('linktreeBDA'),
         type: AdditionalLinkType.LINKTREE,
-        description: "Linktree du meilleur Bureau"
-      }
+        description: 'Linktree du meilleur Bureau',
+      },
     },
     {
       name: 'BAE',
@@ -45,10 +45,10 @@ const assos: LinkGroup = {
       url: 'https://bae.eirb.fr/',
       icon: 'associations/x128/bae.png',
       additionalLink: {
-        url: protectRedirectURL("telegramBAE"),
+        url: protectRedirectURL('telegramBAE'),
         type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram BAE"
-      }
+        description: 'Telegram officiel du BAE',
+      },
     },
     {
       name: 'Le Bar',
@@ -56,51 +56,76 @@ const assos: LinkGroup = {
       url: 'https://bar.eirb.fr/',
       icon: 'associations/x128/bar.png',
       additionalLink: {
-        url: protectRedirectURL("telegramBAR"),
+        url: protectRedirectURL('telegramBAR'),
         type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram BAR"
-      }
+        description: 'Le channel du Q',
+      },
     },
     {
       name: 'Eirbware',
       description: "Association d'assistance et formation informatique",
       url: 'https://eirbware.eirb.fr/',
       icon: 'associations/x128/eirbware.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramEirbware'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel d'Eirbware",
+      },
     },
     {
       name: 'AEI',
       description: 'Junior Entreprise',
       url: 'https://aei.eirb.fr/',
+      icon: 'associations/x128/aei.png',
       additionalLink: {
         description: 'Linktree AEI',
         url: protectRedirectURL('linktreeAEI'),
         type: AdditionalLinkType.LINKTREE,
       },
-      icon: 'associations/x128/aei.png',
     },
     {
       name: 'Eirbot',
       description: 'Association de robotique',
       url: 'https://eirbot.eirb.fr/',
       icon: 'associations/x128/eirbot.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramEirbot'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel d'Eirbot",
+      },
     },
     {
       name: 'EirLab',
       description: 'Fablab',
       url: 'https://eirlab.eirb.fr/',
       icon: 'associations/x128/eirlab.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramEirlab'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel d'Eirlab",
+      },
     },
     {
       name: 'EirSport',
       description: 'Association multisport',
       url: 'https://eirsport.eirb.fr/',
       icon: 'associations/x128/eirsport.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramEirsport'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel d'Eirsport",
+      },
     },
     {
       name: 'EirSpace',
       description: "Association d'aérospatial",
       url: 'https://eirspace.eirb.fr/',
       icon: 'associations/x128/eirspace.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramEirspace'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel d'EirbSpace",
+      },
     },
     {
       name: "Gala Mos'fête",

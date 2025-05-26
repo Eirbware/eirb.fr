@@ -97,24 +97,6 @@ const channels: LinkGroup = {
             icon: "links/telegram.svg"
         },
         {
-            name: "Telegram Eirlab",
-            description: "",
-            url: protectRedirectURL("telegramEirlab"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Eirspace",
-            description: "",
-            url: protectRedirectURL("telegramEirspace"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Eirsport",
-            description: "",
-            url: protectRedirectURL("telegramEirsport"),
-            icon: "links/telegram.svg"
-        },
-        {
             name: "Telegram Eirb'ia",
             description: "",
             url: protectRedirectURL("telegramEirbia"),
@@ -130,18 +112,6 @@ const channels: LinkGroup = {
             name: "Telegram Eirbline",
             description: "",
             url: protectRedirectURL("telegramEirbline"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Eirbot",
-            description: "",
-            url: protectRedirectURL("telegramEirbot"),
-            icon: "links/telegram.svg"
-        },
-        {
-            name: "Telegram Eirbware",
-            description: "",
-            url: protectRedirectURL("telegramEirbware"),
             icon: "links/telegram.svg"
         },
         {
