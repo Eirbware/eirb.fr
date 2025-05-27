@@ -25,7 +25,6 @@ const lists: LinkGroup = {
     {
       name: "Terminat'eirb",
       description: 'Liste BDS 2025/2026 perdante',
-      url: 'https://terminat.eirb.fr/',
       icon: 'lists/x128/terminateirb.png',
     },
     {
@@ -127,7 +126,6 @@ const lists: LinkGroup = {
     {
       name: "Milit'eirb",
       description: 'Liste BDS 2021/2022',
-      url: 'https://milit.eirb.fr/',
       icon: 'lists/x128/militeirb.png',
     },
     {
