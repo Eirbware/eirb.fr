@@ -37,7 +37,7 @@ interface AdditionalLink {
 interface Link {
   name: string;
   description: string;
-  url: string;
+  url?: string;
   additionalLink?: AdditionalLink;
   icon: string;
 }
