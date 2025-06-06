@@ -8,12 +8,20 @@
         <p>{{ link.description }}</p>
       </div>
     </a>
-    <div v-else class="card">
-      <img :src="'img/' + link.icon" loading="lazy" />
+    <a v-else-if="link.additionalLink?true:false" :href="link.additionalLink.url" :key="link.additionalLink.url" rel="nofollow">
+      <div class="card">
+        <img :src="'img/' + link.icon" loading="lazy" />
 
-      <h4 class="no-link">{{ link.name }}</h4>
-      <p>{{ link.description }}</p>
-    </div>
+        <h4>{{ link.name }}</h4>
+        <p>{{ link.description }}</p>
+      </div>
+    </a>
+      <div v-else class="card">
+        <img :src="'img/' + link.icon" loading="lazy" />
+
+        <h4 class="no-link">{{ link.name }}</h4>
+        <p>{{ link.description }}</p>
+      </div>
 
     <a v-if="link.additionalLink" :href="link.additionalLink.url" :key="link.additionalLink.url" rel="nofollow">
       <div class="card-pin">
