@@ -25,7 +25,7 @@ const shortcuts: LinkGroup = {
     {
       name: 'Moodle',
       description: 'Plateforme pédagogique de Bordeaux INP',
-      url: 'https://moodle.bordeaux-inp.fr/',
+      url: 'https://moodle.eirb.fr/',
       icon: 'various/x128//moodle.png',
     },
     {
@@ -43,7 +43,7 @@ const shortcuts: LinkGroup = {
     {
       name: 'Thor',
       description: 'Serveur pédagogique (dépôts Git, gestion de projet...)',
-      url: 'https://thor.enseirb-matmeca.fr/',
+      url: 'https://thor.eirb.fr/',
       icon: 'various/x128/thor.png',
     },
     {
