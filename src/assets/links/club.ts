@@ -24,7 +24,7 @@ const clubs: LinkGroup = {
         description: 'Telegram officiel de Billeirb',
       },
     },
-	{
+    {
       name: "Bouquin'eirb",
       description: 'Club de littérature',
       icon: 'associations/x128/bouquineirb.png',
@@ -33,8 +33,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de Bouquin'eirb",
       },
-	},
-	{
+    },
+    {
       name: "Cin'eirb",
       description: 'Club de cinéma',
       icon: 'associations/x128/cineirb.png',
@@ -43,8 +43,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de Cin'eirb",
       },
-	},
-	{
+    },
+    {
       name: "CluBee",
       description: 'Club de voyage',
       icon: 'associations/x128/clubee.png',
@@ -53,7 +53,7 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de CluBee",
       },
-	},
+    },
     {
       name: "Cook'eirb",
       description: 'Club de cuisine',
@@ -82,7 +82,7 @@ const clubs: LinkGroup = {
       url: 'https://radio.eirb.fr/',
       icon: 'associations/x128/cherifeirb.png',
     },
-	{
+    {
       name: "Chorale",
       description: 'Club de couture',
       url: protectRedirectURL("discordChorale"),
@@ -93,7 +93,7 @@ const clubs: LinkGroup = {
         description: "Discord de la Chorale",
       },
     },
-	{
+    {
       name: "Cycl'eirb",
       description: 'Club de vélo',
       icon: 'associations/x128/cycleirb.png',
@@ -102,8 +102,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de Cycl'eirb",
       },
-	},
-	{
+    },
+    {
       name: "Dans'eirb",
       description: 'Club de danse',
       icon: 'associations/x128/danseirb.png',
@@ -112,8 +112,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de Dans'eirb",
       },
-	},
-	{
+    },
+    {
       name: "EGH",
       description: "Club de jeux vidéos",
       icon: 'associations/x128/egh.png',
@@ -145,7 +145,7 @@ const clubs: LinkGroup = {
         description: "Telegram officiel d'Eirb'IA",
       },
     },
-	    {
+    {
       name: 'Eirbees',
       description: 'Club de Cheerleading',
       icon: 'associations/x128/pompoms.png',
@@ -154,8 +154,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: 'Telegram officiel de Eirbees',
       },
-	    },
-	    {
+    },
+    {
       name: 'EMK',
       description: 'Club de Hip-Hop',
       url: 'https://emk.eirb.fr/',
@@ -166,7 +166,7 @@ const clubs: LinkGroup = {
         description: "Telegram officiel d'EMK",
       },
     },
-	{
+    {
       name: 'Essaim',
       description: "Club de sensibilisation au respect d'autrui",
       icon: 'associations/x128/essaim.png',
@@ -176,7 +176,7 @@ const clubs: LinkGroup = {
         description: 'Telegram officiel de Essaim',
       },
     },
-	    {
+    {
       name: 'FatCap',
       description: 'Club de graf',
       icon: 'associations/x128/fatcap.png',
@@ -185,8 +185,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: 'Telegram officiel de FatCap',
       },
-	    },
-	{
+    },
+    {
       name: "Financi'eirb",
       description: 'Club de finance',
       icon: 'associations/x128/financeirb.png',
@@ -195,8 +195,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de Financi'eirb",
       },
-	},
-	{
+    },
+    {
       name: "Formul'eirb",
       description: 'Club de sports motorisés',
       icon: 'associations/x128/formuleirb.png',
@@ -205,8 +205,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de Formul'eirb",
       },
-	},
-	{
+    },
+    {
       name: "Foyer",
       description: 'Club de jeux de sociétés',
       icon: 'associations/x128/foyer.png',
@@ -215,8 +215,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.DISCORD,
         description: "Discord du Foyer",
       },
-	},
-	{
+    },
+    {
       name: "Grimp'eirb",
       description: "Club d'escalade",
       icon: 'associations/x128/grimpeirb.png',
@@ -225,8 +225,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de Grimp'eirb",
       },
-	},
-	{
+    },
+    {
       name: "Ingenib",
       description: "Forum de recrutement pour les étudiants",
       icon: 'associations/x128/ingenib.png',
@@ -235,8 +235,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de Ingenib",
       },
-	},
-	{
+    },
+    {
       name: "Journal'eirb",
       description: "Club de journalisme",
       icon: 'associations/x128/journaleirb.png',
@@ -263,7 +263,7 @@ const clubs: LinkGroup = {
         description: 'Telegram officiel du club Œno',
       },
     },
-	{
+    {
       name: "Pal'eirb",
       description: 'Club de palais',
       icon: 'associations/x128/paleirb.png',
@@ -272,8 +272,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de Pal'eirb",
       },
-	},
-	{
+    },
+    {
       name: "Pet'eirb",
       description: 'Club de pétanque',
       icon: 'associations/x128/peteirb.png',
@@ -294,7 +294,7 @@ const clubs: LinkGroup = {
         description: 'Telegram officiel de PixEirb',
       },
     },
-	{
+    {
       name: "Planet'eirb",
       description: "Club de sensibilisation à l'écologie",
       icon: 'associations/x128/planeteirb.png',
@@ -303,8 +303,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de Planet'eirb",
       },
-	},
-	{
+    },
+    {
       name: "Pokeirb",
       description: "Club de poker",
       icon: 'associations/x128/pokeirb.png',
@@ -313,8 +313,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de Pokeirb",
       },
-	},
-	{
+    },
+    {
       name: "Rapeirb",
       description: "Club de rap",
       icon: 'associations/x128/rapeirb.png',
@@ -324,7 +324,7 @@ const clubs: LinkGroup = {
         description: "Telegram officiel de Rapeirb",
       },
     },
-	{
+    {
       name: 'Ruche',
       description: 'Club de mix',
       icon: 'associations/x128/ruche.png',
@@ -333,8 +333,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: 'Telegram officiel de la Ruche',
       },
-	},
-	{
+    },
+    {
       name: 'Solideirb',
       description: 'Club de solidarité',
       icon: 'associations/x128/solideirb.png',
@@ -343,8 +343,8 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: 'Telegram officiel de la Solideirb',
       },
-	},
-	{
+    },
+    {
       name: 'Supporteirb',
       description: 'Club de soutien aux associations',
       icon: 'associations/x128/supporteirb.png',
@@ -353,7 +353,7 @@ const clubs: LinkGroup = {
         type: AdditionalLinkType.TELEGRAM,
         description: 'Telegram officiel de la Supporteirb',
       },
-	},
+    },
     {
       name: 'Club Théâtre',
       description: 'Club de théâtre',
@@ -385,16 +385,6 @@ const clubs: LinkGroup = {
         url: protectRedirectURL('telegramVost'),
         type: AdditionalLinkType.TELEGRAM,
         description: 'Telegram officiel de VOST',
-      },
-    },
-    {
-      name: "Youtub'eirb",
-      description: 'Club Youtube',
-      icon: 'associations/x128/vost.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramYoutubeirb'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de Youtub'eirb",
       },
     },
     {
