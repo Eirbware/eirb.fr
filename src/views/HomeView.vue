@@ -109,7 +109,7 @@ const filteredLinkGroups = computed<LinkGroup[]>(() => {
           return (
             l.name.toLowerCase().includes(search.value.toLocaleLowerCase()) ||
             l.description.toLowerCase().includes(search.value.toLocaleLowerCase()) ||
-            l.url.includes(search.value.toLocaleLowerCase())
+            (l.url !== undefined && l.url.includes(search.value.toLocaleLowerCase()))
           );
         }),
       };
