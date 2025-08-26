@@ -388,6 +388,17 @@ const clubs: LinkGroup = {
       },
     },
     {
+      name: "Youtub'eirb",
+      description: 'Club Youtube',
+      url: 'https://youtu.be/yBXQIxdkRuk',
+      icon: 'associations/x128/youtubeirb.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramYoutubeirb'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel de Youtub'eirb",
+      },
+    },
+    {
       name: 'Zik',
       description: 'Club de musique',
       url: 'https://zik.eirb.fr/',

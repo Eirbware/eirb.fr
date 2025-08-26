@@ -8,27 +8,21 @@
         <p>{{ link.description }}</p>
       </div>
     </a>
-    <a v-else-if="link.additionalLink?true:false" :href="link.additionalLink.url" :key="link.additionalLink.url" rel="nofollow">
-      <div class="card">
-        <img :src="'img/' + link.icon" loading="lazy" />
-        <h4>{{ link.name }}</h4>
-        <p>{{ link.description }}</p>
-      </div>
-    </a>
-      <div v-else class="card">
-        <img :src="'img/' + link.icon" loading="lazy" />
+    <div v-else class="card">
+      <img :src="'img/' + link.icon" loading="lazy" />
 
-        <h4 class="no-link">{{ link.name }}</h4>
-        <p>{{ link.description }}</p>
-      </div>
+      <h4 class="no-link">{{ link.name }}</h4>
+      <p>{{ link.description }}</p>
+    </div>
 
-    <a v-if="link.additionalLink" :href="link.url?link.additionalLink.url:none" :key="link.additionalLink.url" rel="nofollow">
+    <a v-if="link.additionalLink" :href="link.additionalLink.url" :key="link.additionalLink.url" rel="nofollow">
       <div class="card-pin">
         <img :src="'img/' + getIconURIForLinkType(link.additionalLink.type)" :alt="'additional link for ' + link.name" :title="link.additionalLink.description" loading="lazy" />
       </div>
     </a>
   </div>
 </template>
+
 
 <script setup lang="ts">
 import type { Link } from '@/assets/links/index';
