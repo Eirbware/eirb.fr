@@ -23,6 +23,7 @@
   </div>
 </template>
 
+
 <script setup lang="ts">
 import type { Link } from '@/assets/links/index';
 import { getIconURIForLinkType } from '@/assets/links/index';
