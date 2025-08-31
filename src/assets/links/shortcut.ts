@@ -1,4 +1,4 @@
-import type { LinkGroup } from './links';
+import { type LinkGroup, protectRedirectURL} from './links';
 
 const shortcuts: LinkGroup = {
   id: 'shortcuts',
@@ -99,6 +99,18 @@ const shortcuts: LinkGroup = {
       description: "L'Association des Ingénieurs Diplômés de l'ENSEIRB-MATMECA",
       url: 'https://aidem.eirb.fr/',
       icon: 'various/x128/aidem.png',
+    },
+    {
+      name: "Planning Inté",
+      description: "Emploi du temps du mois d'intégration",
+      url: protectRedirectURL("planningInte"),
+      icon: 'icons/calendrierInte.png',
+    },
+    {
+      name: "Carte des assos",
+      description: "Carte des associations de l'ENSEIRB-MATMECA",
+      url: protectRedirectURL("carteAssos"),
+      icon: 'icons/carteAssos.png',
     },
   ],
 };
