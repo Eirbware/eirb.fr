@@ -119,7 +119,7 @@ const clubs: LinkGroup = {
       icon: 'associations/x128/egh.png',
       additionalLink: {
         url: protectRedirectURL('discordEGH'),
-        type: AdditionalLinkType.TELEGRAM,
+        type: AdditionalLinkType.DISCORD,
         description: "Discord de EGH",
       },
     },
@@ -321,7 +321,7 @@ const clubs: LinkGroup = {
       },
     },
     {
-      name: "Pokeirb",
+      name: "Pok'eirb",
       description: "Club de poker",
       icon: 'associations/x128/pokeirb.png',
       additionalLink: {
@@ -331,7 +331,7 @@ const clubs: LinkGroup = {
       },
     },
     {
-      name: "Rapeirb",
+      name: "Rap'eirb",
       description: "Club de rap",
       icon: 'associations/x128/rapeirb.png',
       additionalLink: {
@@ -351,7 +351,7 @@ const clubs: LinkGroup = {
       },
     },
     {
-      name: 'Solideirb',
+      name: "Solid'eirb",
       description: 'Club de solidarité',
       icon: 'associations/x128/solideirb.png',
       additionalLink: {
@@ -361,7 +361,7 @@ const clubs: LinkGroup = {
       },
     },
     {
-      name: 'Supporteirb',
+      name: "Support'eirb",
       description: 'Club de soutien aux associations',
       icon: 'associations/x128/supporteirb.png',
       additionalLink: {
