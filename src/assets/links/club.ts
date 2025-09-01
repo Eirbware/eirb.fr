@@ -262,6 +262,11 @@ const clubs: LinkGroup = {
       description: 'Club de programmation compétitive',
       url: 'https://nlog.eirb.fr/',
       icon: 'associations/x128/nlogeirb.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramNlogeirb'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel de Nlog'eirb",
+      },
     },
     {
       name: 'Œno',

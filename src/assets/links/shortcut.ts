@@ -31,7 +31,7 @@ const shortcuts: LinkGroup = {
     {
       name: 'Guide 1A',
       description: "Le guide de l'étudiant de première année",
-      url: 'https://bde.eirb.fr/guide',
+      url: 'https://bde.eirb.fr/docs/guide_1A.pdf',
       icon: 'icons/book.svg',
     },
     {
@@ -63,12 +63,6 @@ const shortcuts: LinkGroup = {
       description: 'Career Center ENSEIRB-MATMECA',
       url: 'https://jobteaser.eirb.fr/',
       icon: 'various/x128/jobteaser.png',
-    },
-    {
-      name: 'Listes mail',
-      description: 'Listes de diffusion',
-      url: 'https://listes.eirb.fr/',
-      icon: 'icons/mail-list.svg',
     },
     {
       name: 'Relations internationales',
@@ -105,12 +99,6 @@ const shortcuts: LinkGroup = {
       description: "Emploi du temps du mois d'intégration",
       url: protectRedirectURL("planningInte"),
       icon: 'icons/calendrierInte.png',
-    },
-    {
-      name: "Carte des assos",
-      description: "Carte des associations de l'ENSEIRB-MATMECA",
-      url: protectRedirectURL("carteAssos"),
-      icon: 'icons/carteAssos.png',
     },
   ],
 };
