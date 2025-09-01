@@ -217,6 +217,17 @@ const clubs: LinkGroup = {
       },
     },
     {
+      name: "GCC",
+      description: "Club de création de jeux vidéo",
+      icon: 'associations/x128/gcc.png',
+      url: 'https://gcc.eirb.fr/',
+      additionalLink: {
+        url: protectRedirectURL('discordGCC'),
+        type: AdditionalLinkType.DISCORD,
+        description: "Discord officiel de GCC",
+      },
+    },
+    {
       name: "Grimp'eirb",
       description: "Club d'escalade",
       icon: 'associations/x128/grimpeirb.png',
@@ -251,6 +262,11 @@ const clubs: LinkGroup = {
       description: 'Club de programmation compétitive',
       url: 'https://nlog.eirb.fr/',
       icon: 'associations/x128/nlogeirb.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramNlogeirb'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel de Nlog'eirb",
+      },
     },
     {
       name: 'Œno',
@@ -390,7 +406,7 @@ const clubs: LinkGroup = {
     {
       name: "Youtub'eirb",
       description: 'Club Youtube',
-      url: 'https://youtu.be/yBXQIxdkRuk',
+      url: 'https://www.youtube.com/@eirbYouTube',
       icon: 'associations/x128/youtubeirb.png',
       additionalLink: {
         url: protectRedirectURL('telegramYoutubeirb'),

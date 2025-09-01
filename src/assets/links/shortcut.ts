@@ -1,4 +1,4 @@
-import type { LinkGroup } from './links';
+import { type LinkGroup, protectRedirectURL} from './links';
 
 const shortcuts: LinkGroup = {
   id: 'shortcuts',
@@ -31,7 +31,7 @@ const shortcuts: LinkGroup = {
     {
       name: 'Guide 1A',
       description: "Le guide de l'étudiant de première année",
-      url: 'https://bde.eirb.fr/guide',
+      url: 'https://bde.eirb.fr/docs/guide_1A.pdf',
       icon: 'icons/book.svg',
     },
     {
@@ -65,12 +65,6 @@ const shortcuts: LinkGroup = {
       icon: 'various/x128/jobteaser.png',
     },
     {
-      name: 'Listes mail',
-      description: 'Listes de diffusion',
-      url: 'https://listes.eirb.fr/',
-      icon: 'icons/mail-list.svg',
-    },
-    {
       name: 'Relations internationales',
       description: 'Service relations internationales',
       url: 'https://international.eirb.fr/',
@@ -99,6 +93,12 @@ const shortcuts: LinkGroup = {
       description: "L'Association des Ingénieurs Diplômés de l'ENSEIRB-MATMECA",
       url: 'https://aidem.eirb.fr/',
       icon: 'various/x128/aidem.png',
+    },
+    {
+      name: "Planning Inté",
+      description: "Emploi du temps du mois d'intégration",
+      url: protectRedirectURL("planningInte"),
+      icon: 'icons/calendrierInte.png',
     },
   ],
 };
