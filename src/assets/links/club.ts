@@ -7,7 +7,7 @@ const clubs: LinkGroup = {
     {
       name: "Apicult'eirb",
       description: "Club d'apiculture de l'Enseirb-Matmeca",
-      icon: 'associations/x128/apicultureirb.png',
+      icon: 'associations/x128/apiculteirb.png',
       additionalLink: {
         url: protectRedirectURL('telegramApicultureirb'),
         type: AdditionalLinkType.TELEGRAM,
