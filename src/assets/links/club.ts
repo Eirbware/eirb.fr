@@ -57,7 +57,6 @@ const clubs: LinkGroup = {
     {
       name: "Cook'eirb",
       description: 'Club de cuisine',
-      url: 'https://cook.eirb.fr/',
       icon: 'associations/x128/cookeirb.png',
       additionalLink: {
         url: protectRedirectURL('telegramCook'),
