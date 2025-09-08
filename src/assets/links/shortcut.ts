@@ -100,6 +100,12 @@ const shortcuts: LinkGroup = {
       url: protectRedirectURL("planningInte"),
       icon: 'icons/calendrierInte.png',
     },
+    {
+      name: "Carte des associations",
+      description: "Carte des locaux des associations",
+      url: protectRedirectURL("carteDesAssos"),
+      icon: 'icons/carteAssos.png',
+    },
   ],
 };
 
