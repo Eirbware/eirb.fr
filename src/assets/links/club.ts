@@ -3,8 +3,18 @@ import { AdditionalLinkType, protectRedirectURL, type LinkGroup } from './links'
 const clubs: LinkGroup = {
   id: 'clubs',
   name: 'Clubs',
-    links: [
-	{
+  links: [
+    {
+      name: "Apicult'eirb",
+      description: "Club d'apiculture de l'Enseirb-Matmeca",
+      icon: 'associations/x128/apicultureirb.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramApicultureirb'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel d'Apicult'eirb",
+      },
+    },
+    {
       name: "Arte",
       description: 'Club artistique',
       icon: 'associations/x128/arte.png',
