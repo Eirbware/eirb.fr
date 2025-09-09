@@ -7,7 +7,7 @@ const services: LinkGroup = {
     {
       name: "Tind'eirb",
       description: "Mise en relation entre parrains/marraines et fillot.e.s",
-      url: 'https://tinder.eirb.fr',
+      url: 'https://tind.eirb.fr',
       icon: 'icons/tinder.svg',
     },
     {
