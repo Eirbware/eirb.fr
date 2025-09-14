@@ -97,7 +97,7 @@ const shortcuts: LinkGroup = {
     {
       name: "Calendrier de l'associatif",
       description: "Tous les évènements de l'associatif",
-      url: protectRedirectURL("planningInte"),
+      url: protectRedirectURL("calendrierAssos"),
       icon: 'icons/calendrierInte.png',
     },
     {
