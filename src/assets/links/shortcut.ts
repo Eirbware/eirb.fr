@@ -95,8 +95,8 @@ const shortcuts: LinkGroup = {
       icon: 'various/x128/aidem.png',
     },
     {
-      name: "Planning Intégration",
-      description: "Emploi du temps du mois d'intégration",
+      name: "Calendrier de l'associatif",
+      description: "Tous les évènements de l'associatif",
       url: protectRedirectURL("planningInte"),
       icon: 'icons/calendrierInte.png',
     },
