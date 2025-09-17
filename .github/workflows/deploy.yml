@@ -39,7 +39,7 @@ jobs:
         - name: Mount server files
           run: |
             mkdir -p ${HOME}/mnt
-            yes "" | sshfs -opassword_stdin eirb: ${HOME}/mnt
+            sshfs -o IdentityFile=${HOME}/.ssh/id_eirb -o StrictHostKeyChecking=no eirb: ${HOME}/mnt
         - name: Copy new version
           run: |
             cp -r dist/* ${HOME}/mnt/nginx/www
