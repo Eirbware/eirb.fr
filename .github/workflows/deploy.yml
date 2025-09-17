@@ -36,9 +36,11 @@ jobs:
         - name: Build eirb.fr
           run: |
             pnpm build
-        - name: Deploy the site through sftp
+        - name: Deploy via sftp: mount files
           run: |
             mkdir -p ${HOME}/mnt
             yes "" | sshfs -opassword_stdin eirb: ${HOME}/mnt
+        - name: Deploy via sftp: copy files
+          run: |
             cp -r dist/* ${HOME}/mnt/nginx/www
             umount ${HOME}/mnt
