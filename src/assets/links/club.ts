@@ -6,7 +6,7 @@ const clubs: LinkGroup = {
   links: [
     {
       name: "Apicult'eirb",
-      description: "Club d'apiculture de l'Enseirb-Matmeca",
+      description: "Club d'apiculture",
       url: "https://apicult.eirb.fr/",
       icon: 'associations/x128/apiculteirb.png',
       additionalLink: {
@@ -94,7 +94,7 @@ const clubs: LinkGroup = {
     },
     {
       name: "Chorale",
-      description: 'Club de couture',
+      description: 'Club de chant en chorale',
       url: protectRedirectURL("discordChorale"),
       icon: 'associations/x128/chorale.png',
       additionalLink: {

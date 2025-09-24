@@ -108,8 +108,9 @@ const shortcuts: LinkGroup = {
     },
     {
     name: "PLMLatex",
-    description: "Overleaf premium gratuit",
+    description: "Service d'Overleaf du CNRS",
     url: "https://plmlatex.math.cnrs.fr/login?",
+    icon: "icons/plmlatex.png",
     },
   ],
 };
