@@ -106,6 +106,11 @@ const shortcuts: LinkGroup = {
       url: protectRedirectURL("carteDesAssos"),
       icon: 'icons/carteAssos.png',
     },
+    {
+    name: "PLMLatex",
+    description: "Overleaf premium gratuit",
+    url: "https://plmlatex.math.cnrs.fr/login?",
+    },
   ],
 };
 

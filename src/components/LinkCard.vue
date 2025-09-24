@@ -93,6 +93,7 @@ const props = defineProps<{
     text-decoration: underline;
   }
   h4.no-link {
+    font-size: 23px;
     color: #716e75;
     text-decoration: none;
   }
