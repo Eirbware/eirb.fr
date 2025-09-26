@@ -109,7 +109,7 @@ const shortcuts: LinkGroup = {
     {
     name: "PLMLatex",
     description: "Service d'Overleaf du CNRS",
-    url: "https://plmlatex.math.cnrs.fr/login?",
+    url: "https://latex.eirb.fr/",
     icon: "icons/plmlatex.png",
     },
   ],
