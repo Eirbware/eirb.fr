@@ -106,6 +106,12 @@ const shortcuts: LinkGroup = {
       url: protectRedirectURL("carteDesAssos"),
       icon: 'icons/carteAssos.png',
     },
+    {
+    name: "PLMLatex",
+    description: "Service d'Overleaf du CNRS",
+    url: "https://latex.eirb.fr/",
+    icon: "icons/plmlatex.png",
+    },
   ],
 };
 
