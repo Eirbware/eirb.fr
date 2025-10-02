@@ -5,12 +5,6 @@ const services: LinkGroup = {
   name: 'Services Eirbware',
   links: [
     {
-      name: "Tind'eirb",
-      description: "Mise en relation entre parrains/marraines et fillot.e.s",
-      url: 'https://tind.eirb.fr',
-      icon: 'icons/tinder.svg',
-    },
-    {
       name: 'Wiki',
       description: "Encyclopédie collaborative de l'école",
       url: 'https://wiki.eirb.fr',
