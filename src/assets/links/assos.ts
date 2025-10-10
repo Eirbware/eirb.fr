@@ -18,6 +18,7 @@ const assos: LinkGroup = {
     {
       name: 'BDS',
       description: 'Bureau des sports',
+      url: 'https://bds.eirb.fr/',
       icon: 'associations/x128/bds.png',
       additionalLink: {
         url: protectRedirectURL('telegramBDS'),
