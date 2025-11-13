@@ -112,6 +112,12 @@ const shortcuts: LinkGroup = {
     url: "https://latex.eirb.fr/",
     icon: "icons/plmlatex.png",
     },
+    {
+    name: "CodiMD",
+    description: "Plateforme collaborative de note markdown",
+    url: "https://codimd.math.cnrs.fr/",
+    icon: "icons/codimd.png",
+    },
   ],
 };
 

@@ -291,7 +291,7 @@ const clubs: LinkGroup = {
     },
     {
       name: "Pal'eirb",
-      description: 'Club de palais',
+      description: 'Club de palet',
       icon: 'associations/x128/paleirb.png',
       additionalLink: {
         url: protectRedirectURL('telegramPaleirb'),
