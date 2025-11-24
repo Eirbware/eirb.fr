@@ -136,6 +136,16 @@ const assos: LinkGroup = {
       url: 'https://f6kqh.enseirb-matmeca.fr/',
       icon: 'associations/x128/f6kqh.png',
     },
+    {
+      name: "CluBee",
+      description: 'Club de voyage',
+      icon: 'associations/x128/clubee.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramCluBee'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel de CluBee",
+      },
+    },
   ],
 };
 

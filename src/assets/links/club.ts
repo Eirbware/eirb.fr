@@ -56,16 +56,6 @@ const clubs: LinkGroup = {
       },
     },
     {
-      name: "CluBee",
-      description: 'Club de voyage',
-      icon: 'associations/x128/clubee.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramCluBee'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de CluBee",
-      },
-    },
-    {
       name: "Cook'eirb",
       description: 'Club de cuisine',
       icon: 'associations/x128/cookeirb.png',
