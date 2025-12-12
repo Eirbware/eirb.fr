@@ -217,6 +217,12 @@ const clubs: LinkGroup = {
       },
     },
     {
+      name: "Gala Mos'fête",
+      description: "Équipe d'organisation du gala",
+      url: 'https://gala.eirb.fr/',
+      icon: 'associations/x128/gala.png',
+    },
+    {
       name: "GCC",
       description: "Club de création de jeux vidéo",
       icon: 'associations/x128/gcc.png',
