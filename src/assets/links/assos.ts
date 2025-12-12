@@ -125,12 +125,6 @@ const assos: LinkGroup = {
       },
     },
     {
-      name: "Gala Mos'fête",
-      description: "Équipe d'organisation du gala",
-      url: 'https://gala.eirb.fr/',
-      icon: 'associations/x128/gala.png',
-    },
-    {
       name: 'F6KQH',
       description: 'Club radioamateur',
       url: 'https://f6kqh.enseirb-matmeca.fr/',
