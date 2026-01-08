@@ -52,6 +52,12 @@ const services: LinkGroup = {
               "url": "https://scan.eirb.fr",
               "icon": "icons/scan.svg"
           }*/
+		{
+			name: 'Kanban',
+			description: "Suivi des projets d'Eirbware",
+			url: 'https://projects.eirb.fr/eirbware/projets',
+			icon: 'icons/projects.png'
+		}
   ],
 };
 
