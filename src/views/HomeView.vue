@@ -64,7 +64,8 @@ import LinkGroupComponent from '@/components/LinkGroup.vue';
 import LinkCard from '@/components/LinkCard.vue';
 
 import { onBeforeEnterFn, onEnterFn, onLeaveFn } from '@/assets/animations';
-import { links as tmpLinkGroups, type LinkGroup, type Link } from '@/assets/links';
+import { links as tmpLinkGroups, type LinkGroup, type Link, AdditionalLinkType} from '@/assets/links';
+import {protectRedirectURL} from '@/assets/links/links'
 
 const linkGroups = tmpLinkGroups.filter((el) => {
   if (el.id === 'vpn') {
@@ -77,12 +78,33 @@ const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
 
 const now = new Date();
-const startShowEvent = new Date('2025-04-13T22:00:00Z');
-const startEvent = new Date('2025-04-13T22:00:00Z');
-const endEvent = new Date('2025-04-25T22:00:00Z');
+const startShowEvent = new Date('2026-02-04T23:00:00Z');
+const startEvent = new Date('2026-02-13T21:30:00Z');
+const endEvent = new Date('2026-02-13T22:30:00Z');
 
-const eventTitle = '';
-const events: Link[] = [
+const eventTitle = 'Campagnes BDE';
+const events: Link[] = [{
+      name: "Millionn'eirb",
+      description: "Liste BDE des Millionnaires",
+      url: 'https://feur.eirb.fr/',
+      icon: 'lists/x128/millionneirb.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramBDE'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel de Millionn'eirb",
+      },
+    },
+    {
+      name: "Aviat'eirb",
+      description: 'Liste BDE des aviateurs',
+      url: 'https://sgbd.eirb.fr/',
+      icon: 'lists/x128/aviateirb.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramBDE'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel de Aviat'eirb",
+      },
+    },
 ];
 
 function finish() {
@@ -172,8 +194,8 @@ onUnmounted(() => {
   }
 
   .event-card {
-    max-width: 30ch;
-    width: 30ch;
+    max-width: 100ch;
+    min-width: 40ch;
   }
 }
 
