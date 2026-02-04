@@ -89,7 +89,7 @@ const events: Link[] = [{
       url: 'https://millionn.eirb.fr/',
       icon: 'lists/x128/millionneirb.png',
       additionalLink: {
-        url: protectRedirectURL('telegramBDE'),
+        url: protectRedirectURL('telegramMillionneirb'),
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de Millionn'eirb",
       },
@@ -100,7 +100,7 @@ const events: Link[] = [{
       url: 'https://aviat.eirb.fr/',
       icon: 'lists/x128/aviateirb.png',
       additionalLink: {
-        url: protectRedirectURL('telegramBDE'),
+        url: protectRedirectURL('telegramAviateirb'),
         type: AdditionalLinkType.TELEGRAM,
         description: "Telegram officiel de Aviat'eirb",
       },
