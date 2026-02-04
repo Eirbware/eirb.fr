@@ -86,7 +86,7 @@ const eventTitle = 'Campagnes BDE';
 const events: Link[] = [{
       name: "Millionn'eirb",
       description: "Liste BDE des Millionnaires",
-      url: 'https://feur.eirb.fr/',
+      url: 'https://millionn.eirb.fr/',
       icon: 'lists/x128/millionneirb.png',
       additionalLink: {
         url: protectRedirectURL('telegramBDE'),
@@ -97,7 +97,7 @@ const events: Link[] = [{
     {
       name: "Aviat'eirb",
       description: 'Liste BDE des aviateurs',
-      url: 'https://sgbd.eirb.fr/',
+      url: 'https://aviat.eirb.fr/',
       icon: 'lists/x128/aviateirb.png',
       additionalLink: {
         url: protectRedirectURL('telegramBDE'),
