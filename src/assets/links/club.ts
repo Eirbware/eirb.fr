@@ -68,7 +68,7 @@ const clubs: LinkGroup = {
     {
       name: "Coutur'eirb",
       description: 'Club de couture',
-      url: 'https://couturi.eirb.fr/',
+      url: 'https://coutur.eirb.fr/',
       icon: 'associations/x128/coutureirb.png',
       additionalLink: {
         url: protectRedirectURL('telegramCouturieirb'),
