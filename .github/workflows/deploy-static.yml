@@ -1,0 +1,43 @@
+name: Build and push docker image
+
+on: 
+  push:
+    branches : [ "main" ]
+    tags: [ 'v*.*.*' ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: "build"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pnpm
+        run: |
+          sudo apt install nodejs npm
+          sudo npm install -g pnpm
+      - name: Install project dependencies
+        run: |
+          pnpm install
+      - name: Build eirb.fr
+        run: |
+          pnpm build
+      - name: Upload to artefact
+        uses: actions/upload-artifact@v4
+        with:
+          name: "build"
+          path: ${{ github.workspace }}/dist
+          include-hidden-files: true
+    
+
+  deploy:
+    needs: [ build ]
+    uses: Eirbware/.github/.github/workflows/deploy-static.yml@master
+    # portainer_stack_webhook must be defined
+    with: 
+      remote_user: "www-eirb"
+      directory_to_copy: "./dist"
+      artifact_name: build
+      artifact_path: ./dist
+    secrets: inherit
