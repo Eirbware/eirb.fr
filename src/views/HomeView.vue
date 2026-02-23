@@ -78,11 +78,11 @@ const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
 
 const now = new Date();
-const startShowEvent = new Date('2026-02-04T23:00:00Z');
-const startEvent = new Date('2026-02-13T21:30:00Z');
-const endEvent = new Date('2026-02-13T22:30:00Z');
+const startShowEvent = new Date('2026-02-23T00:00:00Z');
+const startEvent = new Date('2026-02-25T23:00:00Z');
+const endEvent = new Date('2026-02-25T23:00:00Z');
 
-const eventTitle = 'Campagnes BDE';
+const eventTitle = 'Vote Listes BDE';
 const events: Link[] = [{
       name: "Millionn'eirb",
       description: "Liste BDE des Millionnaires",
