@@ -6,7 +6,6 @@
     <section id="countdown" v-if="startShowEvent < now && now < endEvent" class="count-down">
       <h3>{{ eventTitle }}</h3>
       <CountDown :date="startEvent" @onFinish="finish" v-if="now < startEvent" />
-
       <section class="event-links">
         <LinkCard v-for="link in events" :key="link.url" :link="link" class="event-card" />
       </section>
