@@ -83,29 +83,7 @@ const startEvent = new Date('2026-02-25T23:00:00Z');
 const endEvent = new Date('2026-02-25T23:00:00Z');
 
 const eventTitle = 'Vote Listes BDE';
-const events: Link[] = [{
-      name: "Millionn'eirb",
-      description: "Liste BDE des Millionnaires",
-      url: 'https://millionn.eirb.fr/',
-      icon: 'lists/x128/millionneirb.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramMillionneirb'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de Millionn'eirb",
-      },
-    },
-    {
-      name: "Aviat'eirb",
-      description: 'Liste BDE des aviateurs',
-      url: 'https://aviat.eirb.fr/',
-      icon: 'lists/x128/aviateirb.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramAviateirb'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de Aviat'eirb",
-      },
-    },
-];
+const events: Link[] = [];
 
 function finish() {
   const section = document.getElementById('countdown');
