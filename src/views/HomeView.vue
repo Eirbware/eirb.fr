@@ -6,7 +6,6 @@
     <section id="countdown" v-if="startShowEvent < now && now < endEvent" class="count-down">
       <h3>{{ eventTitle }}</h3>
       <CountDown :date="startEvent" @onFinish="finish" v-if="now < startEvent" />
-
       <section class="event-links">
         <LinkCard v-for="link in events" :key="link.url" :link="link" class="event-card" />
       </section>
@@ -78,12 +77,35 @@ const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
 
 const now = new Date();
-const startShowEvent = new Date('2026-02-23T00:00:00Z');
-const startEvent = new Date('2026-02-25T23:00:00Z');
-const endEvent = new Date('2026-02-25T23:00:00Z');
+const startShowEvent = new Date('2026-03-22T23:00:00Z');
+const startEvent = new Date('2026-03-29T23:00:00Z');
+const endEvent = new Date('2026-03-29T23:00:00Z');
 
-const eventTitle = 'Vote Listes BDE';
-const events: Link[] = [];
+const eventTitle = 'Campagnes BDS 2026';
+const events: Link[] = [
+      {
+      name: "Brazil'eirb",
+      description: "Listes des brésiliens",
+      url: "https://brazil.eirb.fr/",
+      icon: 'lists/brazileirb.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramBrazileirb'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel de Brazil'eirb",
+      },
+    },
+    {
+      name: "Pirat'eirb",
+      description: 'Listes des pirates',
+      url: "https://pirat.eirb.fr/",
+      icon: 'lists/pirateirb.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramPirateirb'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel de Pirat'eirb",
+      },
+    },
+];
 
 function finish() {
   const section = document.getElementById('countdown');
