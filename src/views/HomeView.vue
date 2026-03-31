@@ -77,11 +77,11 @@ const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
 
 const now = new Date();
-const startShowEvent = new Date('2026-03-22T23:00:00Z');
-const startEvent = new Date('2026-03-29T23:00:00Z');
-const endEvent = new Date('2026-03-29T23:00:00Z');
+const startShowEvent = new Date('2026-03-31T10:00:00Z');
+const startEvent = new Date('2026-04-02T15:00:00Z');
+const endEvent = new Date('2026-04-02T15:00:00Z');
 
-const eventTitle = 'Campagnes BDS 2026';
+const eventTitle = 'Votes BDS 2026';
 const events: Link[] = [
       {
       name: "Brazil'eirb",
