@@ -77,7 +77,7 @@ const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
 
 const now = new Date();
-const startShowEvent = new Date('2026-03-31T09:00:00Z');
+const startShowEvent = new Date('2026-03-31T11:00:00Z');
 const startEvent = new Date('2026-04-02T16:00:00Z');
 const endEvent = new Date('2026-04-02T16:00:00Z');
 
