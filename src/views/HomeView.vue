@@ -77,12 +77,24 @@ const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
 
 const now = new Date();
-const startShowEvent = new Date('2026-03-31T10:00:00Z');
-const startEvent = new Date('2026-04-02T15:00:00Z');
-const endEvent = new Date('2026-04-02T15:00:00Z');
+const startShowEvent = new Date('2026-04-19T22:00:00Z');
+const startEvent = new Date('2026-04-26T22:00:00Z');
+const endEvent = new Date('2026-04-26T22:00:00Z');
 
-const eventTitle = 'Votes BDS 2026';
-const events: Link[] = [];
+const eventTitle = 'Semaine des Arts';
+const events: Link[] = [
+    {
+      name: "Antiqu'eirb",
+      description: 'Liste des antiquaires',
+      url: 'https://antiqu.eirb.fr/',
+      icon: 'lists/x128/antiqueirb.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramAntiqueirb'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel de Antiqu'eirb",
+      },
+    },
+];
 
 function finish() {
   const section = document.getElementById('countdown');
