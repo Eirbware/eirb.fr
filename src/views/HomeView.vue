@@ -82,30 +82,7 @@ const startEvent = new Date('2026-04-02T15:00:00Z');
 const endEvent = new Date('2026-04-02T15:00:00Z');
 
 const eventTitle = 'Votes BDS 2026';
-const events: Link[] = [
-      {
-      name: "Brazil'eirb",
-      description: "Listes des brésiliens",
-      url: "https://brazil.eirb.fr/",
-      icon: 'lists/brazileirb.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramBrazileirb'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de Brazil'eirb",
-      },
-    },
-    {
-      name: "Pirat'eirb",
-      description: 'Listes des pirates',
-      url: "https://pirat.eirb.fr/",
-      icon: 'lists/pirateirb.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramPirateirb'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de Pirat'eirb",
-      },
-    },
-];
+const events: Link[] = [];
 
 function finish() {
   const section = document.getElementById('countdown');
