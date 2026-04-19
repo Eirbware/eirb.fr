@@ -5,6 +5,18 @@ const lists: LinkGroup = {
   name: 'Listes',
   links: [
     {
+      name: "Pirat'eirb",
+      description: 'Liste BDS 2026/2027 gagnante',
+      url: "https://pirat.eirb.fr/",
+      icon: 'lists/pirateirb.png',
+    },
+    {
+      name: "Brazil'eirb",
+      description: "Liste BDS 2026/2027 perdante",
+      url: "https://brazil.eirb.fr/",
+      icon: 'lists/brazileirb.png',
+    },
+    {
       name: "Aviat'eirb",
       description: 'Liste BDE 2026/2027 gagnante',
       url: 'https://aviat.eirb.fr/',
