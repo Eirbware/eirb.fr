@@ -87,7 +87,7 @@ const events: Link[] = [
       name: "Antiqu'eirb",
       description: 'Liste des antiquaires',
       url: 'https://antiqu.eirb.fr/',
-      icon: 'lists/x128/antiqueirb.png',
+      icon: 'lists/antiqueirb.png',
       additionalLink: {
         url: protectRedirectURL('telegramAntiqueirb'),
         type: AdditionalLinkType.TELEGRAM,
