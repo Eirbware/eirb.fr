@@ -5,6 +5,12 @@ const lists: LinkGroup = {
   name: 'Listes',
   links: [
     {
+      name: "Antiqu'eirb",
+      description: 'Liste BDA 2026/2027',
+      url: 'https://antiqu.eirb.fr/',
+      icon: 'lists/antiqueirb.png',
+    },
+    {
       name: "Pirat'eirb",
       description: 'Liste BDS 2026/2027 gagnante',
       url: "https://pirat.eirb.fr/",
