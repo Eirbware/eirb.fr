@@ -81,20 +81,8 @@ const startShowEvent = new Date('2026-04-19T22:00:00Z');
 const startEvent = new Date('2026-04-26T22:00:00Z');
 const endEvent = new Date('2026-04-26T22:00:00Z');
 
-const eventTitle = 'Semaine des Arts';
-const events: Link[] = [
-    {
-      name: "Antiqu'eirb",
-      description: 'Liste des antiquaires',
-      url: 'https://antiqu.eirb.fr/',
-      icon: 'lists/antiqueirb.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramAntiqueirb'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de Antiqu'eirb",
-      },
-    },
-];
+const eventTitle = 'VIDE';
+const events: Link[] = [];
 
 function finish() {
   const section = document.getElementById('countdown');
