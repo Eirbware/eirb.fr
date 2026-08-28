@@ -130,6 +130,11 @@ const assos: LinkGroup = {
       description: 'Club radioamateur',
       url: 'https://f6kqh.enseirb-matmeca.fr/',
       icon: 'associations/x128/f6kqh.png',
+      additionalLink: {
+        url: protectRedirectURL('telegramF6KQH'),
+        type: AdditionalLinkType.TELEGRAM,
+        description: "Telegram officiel de F6KQH",
+      },
     },
     {
       name: "CluBee",
