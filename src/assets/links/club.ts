@@ -168,6 +168,7 @@ const clubs: LinkGroup = {
     },
     {
       name: 'Essaim',
+      url: 'https://essaim.eirb.fr/',
       description: "Club de sensibilisation au respect d'autrui",
       icon: 'associations/x128/essaim.png',
       additionalLink: {

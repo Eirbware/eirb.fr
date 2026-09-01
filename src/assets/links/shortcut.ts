@@ -47,15 +47,9 @@ const shortcuts: LinkGroup = {
       icon: 'various/x128/thor.png',
     },
     {
-      name: 'Spagobi',
-      description: 'Relevés de notes et certificats de scolarité',
-      url: 'https://spagobi.eirb.fr/',
-      icon: 'various/x128/spagobi.png',
-    },
-    {
-      name: 'Apogée',
+      name: 'Mon Dossier Web Pégase',
       description: 'Réinscription, notes et résultats',
-      url: 'https://apogee.eirb.fr/',
+      url: 'https://https://mondossierweb.bordeaux-inp.fr//',
       icon: 'icons/graduation.svg',
     },
     {
