@@ -7,7 +7,7 @@
       <h3>{{ eventTitle }}</h3>
       <CountDown :date="startEvent" @onFinish="finish" v-if="now < startEvent" />
       <section class="event-links">
-        <LinkCard v-for="link in events" :key="link.url" :link="link" class="event-card" />
+        <LinkCard v-for="link in events.links" :key="link.url" :link="link" class="event-card" />
       </section>
     </section>
 
@@ -64,7 +64,9 @@ import LinkCard from '@/components/LinkCard.vue';
 
 import { onBeforeEnterFn, onEnterFn, onLeaveFn } from '@/assets/animations';
 import { links as tmpLinkGroups, type LinkGroup, type Link, AdditionalLinkType} from '@/assets/links';
-import {protectRedirectURL} from '@/assets/links/links'
+import {events, startShowEvent, startEvent, endEvent, eventTitle} from '@/assets/links/events'; // we handle events separately from the rest
+
+import {protectRedirectURL} from '@/assets/links/links';
 
 const linkGroups = tmpLinkGroups.filter((el) => {
   if (el.id === 'vpn') {
@@ -77,12 +79,6 @@ const searchInput = ref<HTMLInputElement | null>(null);
 const search = ref('');
 
 const now = new Date();
-const startShowEvent = new Date('2026-04-19T22:00:00Z');
-const startEvent = new Date('2026-04-26T22:00:00Z');
-const endEvent = new Date('2026-04-26T22:00:00Z');
-
-const eventTitle = 'VIDE';
-const events: Link[] = [];
 
 function finish() {
   const section = document.getElementById('countdown');
