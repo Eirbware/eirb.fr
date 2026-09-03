@@ -14,7 +14,7 @@ const events: LinkGroup = {
     {
       name: 'Pokéwood',
       description: 'Collectionne des cartes des clubs et assos de l\'ENSEIRB-MATMECA!',
-      url: 'https://pokewood.eirb.app/',
+      url: 'https://pokewood.web.app/',
       icon: 'icons/pokewood.png',
     },
   ],
