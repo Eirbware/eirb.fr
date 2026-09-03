@@ -1,22 +1,22 @@
 import type { LinkGroup } from './links';
 
-const startShowEvent = new Date('1970-01-01T00:00:00Z');
-const startEvent = new Date('1970-01-01T00:00:00Z');
-const endEvent = new Date('1970-01-01T00:00:00Z');
+const startShowEvent = new Date('2026-09-03T12:00:00Z');
+const startEvent = new Date('2026-09-03T12:00:00Z');
+const endEvent = new Date('2026-10-25T12:00:00Z');
 
-const eventTitle = 'VIDE';
+const eventTitle = 'Intégration';
 
 const events: LinkGroup = {
   id: 'events',
   name: 'Événements',
   links: [
     // Exemple, ne pas supprimer
-    // {
-    //   name: 'Ingénib',
-    //   description: 'Forum Ingénib et Opportunités de stages',
-    //   url: 'https://ingenib-stages.eirb.fr/',
-    //   icon: 'icons/ingenib.png',
-    // },
+    {
+      name: 'Pokéwood',
+      description: 'Collectionne des cartes des clubs et assos de l\'ENSEIRB-MATMECA!',
+      url: 'https://pokewood.eirb.app/',
+      icon: 'icons/pokewood.png',
+    },
   ],
 };
 
