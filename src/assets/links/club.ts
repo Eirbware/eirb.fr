@@ -36,13 +36,13 @@ const clubs: LinkGroup = {
       },
     },
     {
-      name: "Bouquin'eirb",
+      name: "Littér'eirb",
       description: 'Club de littérature',
-      icon: 'associations/x128/bouquineirb.png',
+      icon: 'associations/x128/littereirb.png',
       additionalLink: {
-        url: protectRedirectURL('telegramBouquineirb'),
+        url: protectRedirectURL('telegramLittereirb'),
         type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de Bouquin'eirb",
+        description: "Telegram officiel de Littér'eirb",
       },
     },
     {
