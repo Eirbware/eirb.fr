@@ -20,7 +20,7 @@ const events: LinkGroup = {
 
     {
       name: 'Tind\'eirb',
-      description: 'Permet de trouver ton parrain !',
+      description: 'Permet de trouver ton parrain, ta marraine ou taon parraine !',
       url: 'https://tind.eirb.fr',
       icon: 'icons/tinder.svg',
     }
