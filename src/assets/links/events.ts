@@ -17,6 +17,13 @@ const events: LinkGroup = {
       url: 'https://pokewood.web.app/',
       icon: 'icons/pokewood.png',
     },
+
+    {
+      name: 'Tind\'eirb',
+      description: 'Permet de trouver ton parrain !',
+      url: 'https://tind.eirb.fr',
+      icon: 'icons/tinder.svg',
+    }
   ],
 };
 
