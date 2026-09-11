@@ -1,8 +1,8 @@
 import { AdditionalLinkType, protectRedirectURL, type LinkGroup } from './links';
 
 const clubs: LinkGroup = {
-  id: 'clubs',
-  name: 'Clubs',
+  id: 'active_clubs',
+  name: 'Clubs actifs',
   links: [
     {
       name: "Apicult'eirb",
@@ -77,12 +77,6 @@ const clubs: LinkGroup = {
       },
     },
     {
-      name: "CheriF'eirb",
-      description: 'Club de radio',
-      url: 'https://radio.eirb.fr/',
-      icon: 'associations/x128/cherifeirb.png',
-    },
-    {
       name: "Chorale",
       description: 'Club de chant en chorale',
       url: protectRedirectURL("discordChorale"),
@@ -91,16 +85,6 @@ const clubs: LinkGroup = {
         url: protectRedirectURL('discordChorale'),
         type: AdditionalLinkType.DISCORD,
         description: "Discord de la Chorale",
-      },
-    },
-    {
-      name: "Cycl'eirb",
-      description: 'Club de vélo',
-      icon: 'associations/x128/cycleirb.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramCycleirb'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de Cycl'eirb",
       },
     },
     {
@@ -114,35 +98,13 @@ const clubs: LinkGroup = {
       },
     },
     {
-      name: "EGH",
+      name: "L'EGH",
       description: "Club de jeux vidéos",
       icon: 'associations/x128/egh.png',
       additionalLink: {
         url: protectRedirectURL('discordEGH'),
         type: AdditionalLinkType.DISCORD,
-        description: "Discord de EGH",
-      },
-    },
-    {
-      name: 'Eirbline',
-      description: "Club d'aviation",
-      url: 'https://eirbline.eirb.fr/',
-      icon: 'associations/x128/eirbline.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramEirbline'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel d'Eirbline",
-      },
-    },
-    {
-      name: "Eirb'IA",
-      description: "Club d'intelligence artificielle",
-      url: 'https://ia.eirb.fr/',
-      icon: 'associations/x128/eirbia.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramEirbia'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel d'Eirb'IA",
+        description: "Discord de l'EGH",
       },
     },
     {
@@ -156,17 +118,6 @@ const clubs: LinkGroup = {
       },
     },
     {
-      name: 'EMK',
-      description: 'Club de Hip-Hop',
-      url: 'https://emk.eirb.fr/',
-      icon: 'associations/x128/emk.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramEMK'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel d'EMK",
-      },
-    },
-    {
       name: 'Essaim',
       url: 'https://essaim.eirb.fr/',
       description: "Club de sensibilisation au respect d'autrui",
@@ -174,7 +125,7 @@ const clubs: LinkGroup = {
       additionalLink: {
         url: protectRedirectURL('telegramEssaim'),
         type: AdditionalLinkType.TELEGRAM,
-        description: 'Telegram officiel de Essaim',
+        description: "Telegram officiel de l'Essaim",
       },
     },
     {
@@ -185,16 +136,6 @@ const clubs: LinkGroup = {
         url: protectRedirectURL('telegramFatCap'),
         type: AdditionalLinkType.TELEGRAM,
         description: 'Telegram officiel de FatCap',
-      },
-    },
-    {
-      name: "Financi'eirb",
-      description: 'Club de finance',
-      icon: 'associations/x128/financeirb.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramFinancieirb'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de Financi'eirb",
       },
     },
     {
@@ -250,17 +191,17 @@ const clubs: LinkGroup = {
       additionalLink: {
         url: protectRedirectURL('telegramIngenib'),
         type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de Ingenib",
+        description: "Telegram officiel d'Ingenib",
       },
     },
     {
-      name: "Journal'eirb",
-      description: "Club de journalisme",
-      icon: 'associations/x128/journaleirb.png',
+      name: "Inpride",
+      description: "Club de mise en valeur de la culture queer",
+      icon: 'associations/x128/inpride.png',
       additionalLink: {
-        url: protectRedirectURL('telegramJournaleirb'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de Journal'eirb",
+        url: protectRedirectURL('discordInpride'),
+        type: AdditionalLinkType.DISCORD,
+        description: "Discord officiel de Inpride",
       },
     },
     {
@@ -317,16 +258,6 @@ const clubs: LinkGroup = {
       },
     },
     {
-      name: "Planet'eirb",
-      description: "Club de sensibilisation à l'écologie",
-      icon: 'associations/x128/planeteirb.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramPlaneteirb'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de Planet'eirb",
-      },
-    },
-    {
       name: "Pok'eirb",
       description: "Club de poker",
       icon: 'associations/x128/pokeirb.png',
@@ -354,16 +285,6 @@ const clubs: LinkGroup = {
         url: protectRedirectURL('telegramRuche'),
         type: AdditionalLinkType.TELEGRAM,
         description: 'Telegram officiel de la Ruche',
-      },
-    },
-    {
-      name: "Solid'eirb",
-      description: 'Club de solidarité',
-      icon: 'associations/x128/solideirb.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramSolideirb'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: 'Telegram officiel de la Solideirb',
       },
     },
     {
@@ -407,17 +328,6 @@ const clubs: LinkGroup = {
         url: protectRedirectURL('telegramVost'),
         type: AdditionalLinkType.TELEGRAM,
         description: 'Telegram officiel de VOST',
-      },
-    },
-    {
-      name: "Youtub'eirb",
-      description: 'Club Youtube',
-      url: 'https://www.youtube.com/@eirbYouTube',
-      icon: 'associations/x128/youtubeirb.png',
-      additionalLink: {
-        url: protectRedirectURL('telegramYoutubeirb'),
-        type: AdditionalLinkType.TELEGRAM,
-        description: "Telegram officiel de Youtub'eirb",
       },
     },
     {

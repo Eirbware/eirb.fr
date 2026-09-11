@@ -94,7 +94,7 @@ const props = defineProps<{
   }
   h4.no-link {
     font-size: 23px;
-    color: #716e75;
+    color: white;
     text-decoration: none;
   }
 
@@ -117,7 +117,7 @@ const props = defineProps<{
   height: 27px;
   width: 27px;
   aspect-ratio: 1/1;
-  
+
   border-radius: 50%;
 
   background: none;
