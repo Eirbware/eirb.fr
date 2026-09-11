@@ -195,13 +195,13 @@ const clubs: LinkGroup = {
       },
     },
     {
-      name: "Inpride",
+      name: "INPride",
       description: "Club de mise en valeur de la culture queer",
       icon: 'associations/x128/inpride.png',
       additionalLink: {
         url: protectRedirectURL('discordInpride'),
         type: AdditionalLinkType.DISCORD,
-        description: "Discord officiel de Inpride",
+        description: "Discord officiel de INPride",
       },
     },
     {
