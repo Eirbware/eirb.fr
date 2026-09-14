@@ -49,7 +49,7 @@ const shortcuts: LinkGroup = {
     {
       name: 'Mon Dossier Web Pégase',
       description: 'Réinscription, notes et résultats',
-      url: 'https://https://mondossierweb.bordeaux-inp.fr//',
+      url: 'https://mondossierweb.bordeaux-inp.fr//',
       icon: 'icons/graduation.svg',
     },
     {
