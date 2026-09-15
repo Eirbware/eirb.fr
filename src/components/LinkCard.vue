@@ -94,7 +94,7 @@ const props = defineProps<{
   }
   h4.no-link {
     font-size: 23px;
-    color: white;
+    color: unset;
     text-decoration: none;
   }
 
