@@ -5,10 +5,16 @@ const lists: LinkGroup = {
   name: 'Listes',
   links: [
     {
-      name: "Antiqu'eirb",
-      description: 'Liste BDA 2026/2027',
-      url: 'https://antiqu.eirb.fr/',
-      icon: 'lists/antiqueirb.png',
+      name: "Aviat'eirb",
+      description: 'Liste BDE 2026/2027 gagnante',
+      url: 'https://aviat.eirb.fr/',
+      icon: 'lists/x128/aviateirb.png',
+    },
+    {
+      name: "Millionn'eirb",
+      description: "Liste BDE 2026/2027 perdante",
+      url: 'https://millionn.eirb.fr/',
+      icon: 'lists/x128/millionneirb.png',
     },
     {
       name: "Pirat'eirb",
@@ -23,16 +29,10 @@ const lists: LinkGroup = {
       icon: 'lists/brazileirb.png',
     },
     {
-      name: "Aviat'eirb",
-      description: 'Liste BDE 2026/2027 gagnante',
-      url: 'https://aviat.eirb.fr/',
-      icon: 'lists/x128/aviateirb.png',
-    },
-    {
-      name: "Millionn'eirb",
-      description: "Liste BDE 2026/2027 perdante",
-      url: 'https://millionn.eirb.fr/',
-      icon: 'lists/x128/millionneirb.png',
+      name: "Antiqu'eirb",
+      description: 'Liste BDA 2026/2027',
+      url: 'https://antiqu.eirb.fr/',
+      icon: 'lists/antiqueirb.png',
     },
     {
       name: "Minist'eirb",
