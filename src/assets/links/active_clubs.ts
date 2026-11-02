@@ -98,8 +98,8 @@ const clubs: LinkGroup = {
       },
     },
     {
-      name: "L'EGH",
-      description: "Club de jeux vidéos",
+      name: "Le GH aka l'oeuf 🥚",
+      description: "Épicerie",
       icon: 'associations/x128/egh.png',
       additionalLink: {
         url: protectRedirectURL('discordEGH'),
